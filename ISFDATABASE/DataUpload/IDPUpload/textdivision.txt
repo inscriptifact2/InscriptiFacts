@@ -1,0 +1,72 @@
+"Main Text or Publication Number"|"Text Descriptive Title"|"ISF Assigned Text Number"|"Spatial Search Code"|"Text Division"|"Text Division Sequencing Order"|"Text Sub-Division"|"Text Sub-Division Sequencing Order"|"Text View"|"Text Division Description"|"Text Division Museum Number"|"Index Map Filename"
+"TAD C1.1"|"Ahiqar"|"ISF_TXT_00071"|"000"|"Column 1"|"1"|||"Column 1"|"TAD C1.1; Sachau Pl. 40; Sachau Pap 49; Ungnad 50"|"P13446A"|
+"TAD C1.1"|"Ahiqar"|"ISF_TXT_00071"|"000"|"Column 2"|"2"|||"Column 2"|"TAD C1.1; Sachau Pl. 41; Sachau Pap 50; Ungnad 51"|"P13446B"|
+"TAD C1.1"|"Ahiqar"|"ISF_TXT_00071"|"000"|"Column 3"|"3"|||"Column 3"|"TAD C1.1; Sachau Pl. 42; Sachau Pap 51; Ungnad 52"|"P13446C"|
+"TAD C1.1"|"Ahiqar"|"ISF_TXT_00071"|"000"|"Columns 4-5"|"4"|||"Columns 4-5"|"TAD C1.1; Sachau Pl. 43; Sachau Pap 52; Ungnad 53-54"|"P13446D"|
+"TAD C1.1"|"Ahiqar"|"ISF_TXT_00071"|"000"|"Column 6"|"5"|||"Column 6"|"TAD C1.1; Sachau Pl. 45; Sachau Pap 54; Ungnad 56"|"P13446E"|
+"TAD C1.1"|"Ahiqar"|"ISF_TXT_00071"|"100"|"Column 7-8"|"6"|||"Column 7-8"|"TAD C1.1; Sachau Pl. 48; Sachau Pap 57; Ungnad 60-61"|"P13446K"|"AT_91_P13446K_R_T"
+"TAD C1.1"|"Ahiqar"|"ISF_TXT_00071"|"100"|"Columns 9-10"|"7"|||"Columns 9-10"|"TAD C1.1; Sachau Pl. 47; Sachau Pap 56; Ungnad 58-59"|"P13446G"|"AT_91_P13446G_R_T"
+"TAD C1.1"|"Ahiqar"|"ISF_TXT_00071"|"000"|"Columns 11"|"8"|||"Columns 11"|"TAD C1.1; Sachau Pl. 46; Sachau Pap 55; Ungnad 57"|"P13446F"|
+"TAD C1.1"|"Ahiqar"|"ISF_TXT_00071"|"000"|"Column 13"|"9"|||"Column 13"|"TAD C1.1; Sachau Pl. 49; Sachau Pap 58; Ungnad 62"|"P13446H"|
+"TAD C1.1"|"Ahiqar"|"ISF_TXT_00071"|"000"|"Column 14"|"10"|||"Column 14"|"TAD C1.1; Sachau Pl. 50; Sachau Pap 59; Ungnad 63"|"P13446L"|
+"TAD C1.1"|"Ahiqar"|"ISF_TXT_00071"|"000"|"Erased Column 2"|"11"|||"Erased Column 2"|"TAD C1.1"|"P13446L verso"|
+"TAD C1.1"|"Ahiqar"|"ISF_TXT_00071"|"000"|"Erased Column 3"|"12"|||"Erased Column 3"|"TAD C1.1"|"P13446H verso"|
+"TAD C1.1"|"Ahiqar"|"ISF_TXT_00071"|"000"|"Fragments"|"13"|||"Fragments"|"TAD C1.1; Sachau Pap 64/23,28"|"P13461D, frgs. 13445C/23,28"|
+"TAD C2.1"|"Bisitun Inscription"|"ISF_TXT_00072"|"000"|"Column I"|"1"|||"Column I"|"TAD C2.1"|"Fragmente zu P13447"|
+"TAD C2.1"|"Bisitun Inscription"|"ISF_TXT_00072"|"000"|"Column III"|"2"|||"Column III"|"TAD C2.1; Sachau Pl. 57; Ungnad 65"|"P13447 col. I recto; Fragmente zu P13447"|
+"TAD C2.1"|"Bisitun Inscription"|"ISF_TXT_00072"|"000"|"Column IV"|"3"|||"Column IV"|"TAD C2.1; Sachau Pl. 57; Ungnad 65"|"P13447 col. I recto"|
+"TAD C2.1"|"Bisitun Inscription"|"ISF_TXT_00072"|"000"|"Column V"|"4"|||"Column V"|"TAD C2.1; Sachau Pl. 52; Sachau Pap 61; Ungnad 66"|"P13447 col. II recto"|
+"TAD C2.1"|"Bisitun Inscription"|"ISF_TXT_00072"|"000"|"Column VII"|"5"|||"Column VII"|"TAD C2.1; Sachau Pl. 54,56; Sachau Pap 62; Ungnad 67"|"P13447 cols. III-IV recto"|
+"TAD C2.1"|"Bisitun Inscription"|"ISF_TXT_00072"|"000"|"Column VIII"|"6"|||"Column VIII"|"TAD C2.1; Sachau Pl. 54; Sachau Pap 62; Ungnad 67"|"P13447 cols. III-IV recto"|
+"TAD C2.1"|"Bisitun Inscription"|"ISF_TXT_00072"|"000"|"Column XI"|"7"|||"Column XI"|"TAD C2.1; Sachau Pl. 55; Ungnad 68D"|"P13447 col. V right"|
+"TAD C3.13"|"Fragmentary Record of Memoranda"|"ISF_TXT_00073"|"000"|"Column I, lines 1-19"|"1"|||"Column I, lines 1-19"|"TAD C3.13; Cowley 61-62; Sachau Pl. 55-56; Sachau Pap 62v,68; Ungnad 67ii,68E"|"P13447 col. V left"|
+"TAD C3.13"|"Fragmentary Record of Memoranda"|"ISF_TXT_00073"|"000"|"Column II, lines 20-33"|"2"|||"Column II, lines 20-33"|"TAD C3.13; Cowley 62; Sachau Pl. 56; Sachau Pap 68; Ungnad 68E"|"P13447, col. V left"|
+"TAD C3.13"|"Fragmentary Record of Memoranda"|"ISF_TXT_00073"|"000"|"Column III, lines 34-43"|"3"|||"Column III, lines 34-43"|"TAD C3.13; Cowley 63; Sachau Pl. 53; Sachau Pap 61v; Ungnad 69"|"P13447 col. II verso"|
+"TAD C3.13"|"Fragmentary Record of Memoranda"|"ISF_TXT_00073"|"000"|"Column IV, lines 44-52"|"4"|||"Column IV, lines 44-52"|"TAD C3.13; Cowley 63; Sachau Pl. 53; Sachau Pap 61v; Ungnad 69"|"P13447 col. II verso"|
+"TAD C3.13"|"Fragmentary Record of Memoranda"|"ISF_TXT_00073"|"000"|"Column V, lines 53-57"|"5"|||"Column V, lines 53-57"|"TAD C3.13"|"P13447 col. I verso "|
+"TAD C3.15"|"Collection Account"|"ISF_TXT_00074"|"100"|"Column I, lines 1-20"|"1"|||"Column I, lines 1-20"|"TAD C3.15; Cowley 22; Sachau Pl. 18; Sachau Pap 18; Ungnad 19"|"P13488A, P23101, 96/64,76"|"AT_91_P13488A_R_T"
+"TAD C3.15"|"Collection Account"|"ISF_TXT_00074"|"100"|"Column II, lines 21-41"|"2"|||"Column II, lines 21-41"|"TAD C3.15; Cowley 22; Sachau Pl. 18; Sachau Pap 18; Ungnad 19"|"P13488A, P23101, 96/64,76"|"AT_91_P13488A_R_T"
+"TAD C3.15"|"Collection Account"|"ISF_TXT_00074"|"100"|"Column III, lines 42-63"|"3"|||"Column III, lines 42-63"|"TAD C3.15; Cowley 22; Sachau Pl. 19; Sachau Pap 18; Ungnad 19"|"P13488A, P23101, 96/64,76"|"AT_91_P13488A_R_T"
+"TAD C3.15"|"Collection Account"|"ISF_TXT_00074"|"000"|"Column IV, lines 64-85"|"4"|||"Column IV, lines 64-85"|"TAD C3.15; Cowley 22; Sachau Pl. 19; Sachau Pap 18; Ungnad 19"|"P13488"|
+"TAD C3.15"|"Collection Account"|"ISF_TXT_00074"|"000"|"Column V, lines 86-103"|"5"|||"Column V, lines 86-103"|"TAD C3.15; Cowley 22; Sachau Pl. 19; Sachau Pap 18; Ungnad 19"|"P13488"|
+"TAD C3.15"|"Collection Account"|"ISF_TXT_00074"|"000"|"Column VI, lines 104-122"|"6"|||"Column VI, lines 104-122"|"TAD C3.15; Cowley 22; Sachau Pl. 20; Sachau Pap 18; Ungnad 19"|"P13488"|
+"TAD C3.15"|"Collection Account"|"ISF_TXT_00074"|"000"|"Column VII, lines 123-135"|"7"|||"Column VII, lines 123-135"|"TAD C3.15; Cowley 22; Sachau Pl. 20; Sachau Pap 18; Ungnad 19"|"P13488"|
+"TAD C3.15"|"Collection Account"|"ISF_TXT_00074"|"000"|"Column VIII, lines 136-138"|"8"|||"Column VIII, lines 136-138"|"TAD C3.15; Cowley 22; Sachau Pl. 17; Sachau Pap 18; Ungnad 19"|"P13488"|
+"TAD C3.15"|"Collection Account"|"ISF_TXT_00074"|"000"|"Reverse Column I"|"9"|||"Reverse Column I"|"TAD C3.15"|"P13488A, P23101, 96/64,76"|
+"TAD C3.15"|"Collection Account"|"ISF_TXT_00074"|"000"|"Reverse Column II"|"10"|||"Reverse Column II"|"TAD C3.15"|"P13488A, P23101, 96/64,76"|
+"TAD C3.15"|"Collection Account"|"ISF_TXT_00074"|"000"|"Reverse Column III"|"11"|||"Reverse Column III"|"TAD C3.15"|"P13488A, P23101, 96/64,76"|
+"TAD C3.7"|"Customs Account Ahiqar Palimpsest"|"ISF_TXT_00077"|"000"|"A Recto Columns 2-3"|"1"|||"A Recto Columns 2-3"|"TAD C3.7"|"P13446A Recto"|
+"TAD C3.7"|"Customs Account Ahiqar Palimpsest"|"ISF_TXT_00077"|"000"|"B Recto Column 1"|"2"|||"B Recto Column 1"|"TAD C3.7"|"P13446B Recto"|
+"TAD C3.7"|"Customs Account Ahiqar Palimpsest"|"ISF_TXT_00077"|"000"|"C Recto Columns 1-2"|"3"|||"C Recto Columns 1-2"|"TAD C3.7"|"P13446C Recto "|
+"TAD C3.7"|"Customs Account Ahiqar Palimpsest"|"ISF_TXT_00077"|"000"|"D Recto Columns 1-3"|"4"|||"D Recto Columns 1-3"|"TAD C3.7"|"P13446D Recto"|
+"TAD C3.7"|"Customs Account Ahiqar Palimpsest"|"ISF_TXT_00077"|"000"|"E Recto Columns 1-2"|"5"|||"E Recto Columns 1-2"|"TAD C3.7"|"P13446E Recto"|
+"TAD C3.7"|"Customs Account Ahiqar Palimpsest"|"ISF_TXT_00077"|"100"|"K Recto Columns 1-4"|"6"|||"K Recto Columns 1-4"|"TAD C3.7"|"P13446K Recto"|"AT_91_P13446K_R_T"
+"TAD C3.7"|"Customs Account Ahiqar Palimpsest"|"ISF_TXT_00077"|"100"|"G Recto Columns 1-4"|"7"|||"G Recto Columns 1-4"|"TAD C3.7"|"P13446G Recto"|"AT_91_P13446G_R_T"
+"TAD C3.7"|"Customs Account Ahiqar Palimpsest"|"ISF_TXT_00077"|"000"|"F Recto Columns 1-3"|"8"|||"F Recto Columns 1-3"|"TAD C3.7"|"P13446F Recto"|
+"TAD C3.7"|"Customs Account Ahiqar Palimpsest"|"ISF_TXT_00077"|"000"|"F Verso Columns 1-3"|"9"|||"F Verso Columns 1-3"|"TAD C3.7"|"P13446F Verso"|
+"TAD C3.7"|"Customs Account Ahiqar Palimpsest"|"ISF_TXT_00077"|"100"|"G Verso Columns 2-5"|"10"|||"G Verso Columns 2-5"|"TAD C3.7"|"P13446G Verso"|"AT_91_P13446G_V_T"
+"TAD C3.7"|"Customs Account Ahiqar Palimpsest"|"ISF_TXT_00077"|"100"|"K Verso Columns 2-3"|"11"|||"K Verso Columns 2-3"|"TAD C3.7"|"P13446K Verso"|"AT_91_P13446K_V_T"
+"TAD C3.7"|"Customs Account Ahiqar Palimpsest"|"ISF_TXT_00077"|"000"|"E Verso Columns 1-2"|"12"|||"E Verso Columns 1-2"|"TAD C3.7"|"P13446E Verso"|
+"TAD C3.7"|"Customs Account Ahiqar Palimpsest"|"ISF_TXT_00077"|"100"|"D Verso Columns 1-2"|"13"|||"D Verso Columns 1-2"|"TAD C3.7"|"P13446D Verso"|"AT_91_P13446D_V_T"
+"TAD C3.7"|"Customs Account Ahiqar Palimpsest"|"ISF_TXT_00077"|"000"|"C Verso"|"14"|||"C Verso"|"TAD C3.7"|"P13446C Verso"|
+"TAD C3.7"|"Customs Account Ahiqar Palimpsest"|"ISF_TXT_00077"|"000"|"B Verso"|"15"|||"B Verso"|"TAD C3.7"|"P13446B Verso"|
+"TAD C3.7"|"Customs Account Ahiqar Palimpsest"|"ISF_TXT_00077"|"000"|"A Verso"|"16"|||"A Verso"|"TAD C3.7"|"P13446A Verso"|
+"TAD C3.7"|"Customs Account Ahiqar Palimpsest"|"ISF_TXT_00077"|"000"|"H Recto Columns 1-2"|"17"|||"H Recto Columns 1-2"|"TAD C3.7"|"P13446H Recto"|
+"TAD C3.7"|"Customs Account Ahiqar Palimpsest"|"ISF_TXT_00077"|"000"|"L Recto Column 2"|"18"|||"L Recto Column 2"|"TAD C3.7"|"P13446L Recto "|
+"3Q15"|"Copper Scroll"|"ISF_TXT_00313"|"000"|"Column I"|"1"|||"Column I"|"Cuts 1-4"||
+"3Q15"|"Copper Scroll"|"ISF_TXT_00313"|"000"|"Column II"|"2"|||"Column II"|"Cuts 5-6"||
+"3Q15"|"Copper Scroll"|"ISF_TXT_00313"|"000"|"Column III"|"3"|||"Column III"|"Cuts 7-8"||
+"3Q15"|"Copper Scroll"|"ISF_TXT_00313"|"000"|"Column IV"|"4"|||"Column IV"|"Cuts 9-10"||
+"3Q15"|"Copper Scroll"|"ISF_TXT_00313"|"000"|"Column V"|"5"|||"Column V"|"Cuts 10-11"||
+"3Q15"|"Copper Scroll"|"ISF_TXT_00313"|"000"|"Column VI"|"6"|||"Column VI"|"Cut 12"||
+"3Q15"|"Copper Scroll"|"ISF_TXT_00313"|"000"|"Column VII"|"7"|||"Column VII"|"Cuts 13-14"||
+"3Q15"|"Copper Scroll"|"ISF_TXT_00313"|"000"|"Column VIII"|"8"|||"Column VIII"|"Cut 15"||
+"3Q15"|"Copper Scroll"|"ISF_TXT_00313"|"000"|"Column IX"|"9"|||"Column IX"|"Cuts 16-17"||
+"3Q15"|"Copper Scroll"|"ISF_TXT_00313"|"000"|"Column X"|"10"|||"Column X"|"Cuts 17-18"||
+"3Q15"|"Copper Scroll"|"ISF_TXT_00313"|"000"|"Column XI"|"11"|||"Column XI"|"Cuts 19-20"||
+"3Q15"|"Copper Scroll"|"ISF_TXT_00313"|"000"|"Column XII"|"12"|||"Column XII"|"Cuts 21-22"||
+"ISF_TXT_00713"|"Mandaic Lead Scroll"|"ISF_TXT_00713"|"000"|"Side 1"|"1"|||"Side 1"|"Obverse"||
+"ISF_TXT_00713"|"Mandaic Lead Scroll"|"ISF_TXT_00713"|"000"|"Side 2"|"2"|||"Side 2"|"Reverse"||
+"ISF_TXT_00720"|"Ostrich egg with Phoenician inscription"|"ISF_TXT_00720"|"000"|"Top"|"1"||||||
+"ISF_TXT_00720"|"Ostrich egg with Phoenician inscription"|"ISF_TXT_00720"|"000"|"Sides"|"2"||||||
+"ISF_TXT_00720"|"Ostrich egg with Phoenician inscription"|"ISF_TXT_00720"|"000"|"Bottom"|"3"||||||

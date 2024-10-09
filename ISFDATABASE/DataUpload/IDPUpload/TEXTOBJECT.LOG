@@ -1,0 +1,190 @@
+
+SQL*Loader: Release 9.0.1.1.1 - Production on Fri Apr 2 18:30:05 2004
+
+(c) Copyright 2001 Oracle Corporation.  All rights reserved.
+
+Control File:   TEXTOBJECT.CTL
+Data File:      TEXTOBJECT.txt
+  Bad File:     TEXTOBJECT.BAD
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 5000
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table TMP_TEXTOBJECT, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+ISFASSIGNEDTEXTNO                   FIRST     *   |  O(") CHARACTER            
+MAINTEXTORPUBLCNNO                   NEXT     *   |  O(") CHARACTER            
+MAINTEXTORPUBLCNNOPREFIX             NEXT     *   |  O(") CHARACTER            
+MAINTEXTORPUBLCNNOSUFFIX             NEXT     *   |  O(") CHARACTER            
+ALTTEXTORPUBLCNNO                    NEXT     *   |  O(") CHARACTER            
+TEXTSEARCHANDDISPLAYCODE             NEXT     *   |  O(") CHARACTER            
+TEXTDIVISION                         NEXT     *   |  O(") CHARACTER            
+TEXTDIVISIONDESCRIPTION              NEXT     *   |  O(") CHARACTER            
+TEXTDIVISIONMUSEUMNO                 NEXT     *   |  O(") CHARACTER            
+TEXTDIVISIONSUBDIVISION              NEXT     *   |  O(") CHARACTER            
+TEXTORPUBLCNNONOTE                   NEXT     *   |  O(") CHARACTER            
+PHYSICALOBJECTDESCRIPTION            NEXT     *   |  O(") CHARACTER            
+PHYSICALOBJECTNOTE                   NEXT     *   |  O(") CHARACTER            
+PHYSICALOBJECTNOTE1                  NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO1                   NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO2                   NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO3                   NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO4                   NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO5                   NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO6                   NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO7                   NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO8                   NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO9                   NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO10                  NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO11                  NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO12                  NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO13                  NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO14                  NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO15                  NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO16                  NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO17                  NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO18                  NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO19                  NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO20                  NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO21                  NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO22                  NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO23                  NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO24                  NEXT     *   |  O(") CHARACTER            
+MUSEUMACCESSIONNO25                  NEXT     *   |  O(") CHARACTER            
+TEXTVIEW                             NEXT     *   |  O(") CHARACTER            
+TEXTVIEW1                            NEXT     *   |  O(") CHARACTER            
+TEXTVIEW2                            NEXT     *   |  O(") CHARACTER            
+TEXTVIEW3                            NEXT     *   |  O(") CHARACTER            
+TEXTVIEW4                            NEXT     *   |  O(") CHARACTER            
+TEXTVIEW5                            NEXT     *   |  O(") CHARACTER            
+TEXTVIEW6                            NEXT     *   |  O(") CHARACTER            
+TEXTVIEW7                            NEXT     *   |  O(") CHARACTER            
+TEXTVIEW8                            NEXT     *   |  O(") CHARACTER            
+TEXTVIEW9                            NEXT     *   |  O(") CHARACTER            
+ISPARTOFCORPUS                       NEXT     *   |  O(") CHARACTER            
+ISPARTOFCORPUSCATEGORY               NEXT     *   |  O(") CHARACTER            
+ISPARTOFCORPUSSUBCATEGORY            NEXT     *   |  O(") CHARACTER            
+ISPARTOFCORPUS1                      NEXT     *   |  O(") CHARACTER            
+ISPARTOFCORPUS1CATEGORY              NEXT     *   |  O(") CHARACTER            
+ISPARTOFCORPUS1SUBCATEGORY           NEXT     *   |  O(") CHARACTER            
+ISPARTOFCORPUS2                      NEXT     *   |  O(") CHARACTER            
+ISPARTOFCORPUS2CATEGORY              NEXT     *   |  O(") CHARACTER            
+ISPARTOFCORPUS2SUBCATEGORY           NEXT     *   |  O(") CHARACTER            
+ISVERSIONOF                          NEXT     *   |  O(") CHARACTER            
+ISPARTOF                             NEXT     *   |  O(") CHARACTER            
+TEXTUNINSCRIBEDARTIFACT              NEXT     *   |  O(") CHARACTER            
+TYPEOFITEMCATELOGED                  NEXT     *   |  O(") CHARACTER            
+MEDIUM                               NEXT     *   |  O(") CHARACTER            
+TEXTDESCRIPTIVETITLE                 NEXT     *   |  O(") CHARACTER            
+ALTTEXTTITLE1                        NEXT     *   |  O(") CHARACTER            
+ALTTEXTTITLE2                        NEXT     *   |  O(") CHARACTER            
+ALTTEXTTITLE3                        NEXT     *   |  O(") CHARACTER            
+ALTTEXTTITLE4                        NEXT     *   |  O(") CHARACTER            
+ALTTEXTTITLE5                        NEXT     *   |  O(") CHARACTER            
+TEXTDESCRIPTION                      NEXT     *   |  O(") CHARACTER            
+EXCAVATIONDESCRIPTION                NEXT     *   |  O(") CHARACTER            
+EXCAVATIONNO                         NEXT     *   |  O(") CHARACTER            
+EXCAVATIONNO1                        NEXT     *   |  O(") CHARACTER            
+EXCAVATIONNO2                        NEXT     *   |  O(") CHARACTER            
+EXCAVATIONNO3                        NEXT     *   |  O(") CHARACTER            
+EXCAVATIONNO4                        NEXT     *   |  O(") CHARACTER            
+EXCAVATIONNO5                        NEXT     *   |  O(") CHARACTER            
+EXCAVATIONNO6                        NEXT     *   |  O(") CHARACTER            
+EXCAVATIONNO7                        NEXT     *   |  O(") CHARACTER            
+EXCAVATIONNO8                        NEXT     *   |  O(") CHARACTER            
+EXCAVATIONNO9                        NEXT     *   |  O(") CHARACTER            
+GEOGRAPHICALCOVERAGENOTE             NEXT     *   |  O(") CHARACTER            
+SCRIPTNOTE                           NEXT     *   |  O(") CHARACTER            
+SCRIPT                               NEXT     *   |  O(") CHARACTER            
+SCRIPTSUBLEVEL                       NEXT     *   |  O(") CHARACTER            
+SCRIPT1                              NEXT     *   |  O(") CHARACTER            
+SCRIPT1SUBLEVEL                      NEXT     *   |  O(") CHARACTER            
+SCRIPT2                              NEXT     *   |  O(") CHARACTER            
+SCRIPT2SUBLEVEL                      NEXT     *   |  O(") CHARACTER            
+SCRIPT3                              NEXT     *   |  O(") CHARACTER            
+SCRIPT3SUBLEVEL                      NEXT     *   |  O(") CHARACTER            
+LANGUAGENOTE                         NEXT     *   |  O(") CHARACTER            
+LANGUAGE                             NEXT     *   |  O(") CHARACTER            
+LANGUAGE1                            NEXT     *   |  O(") CHARACTER            
+LANGUAGE2                            NEXT     *   |  O(") CHARACTER            
+LANGUAGE3                            NEXT     *   |  O(") CHARACTER            
+RELEVANTTIMELINE                     NEXT     *   |  O(") CHARACTER            
+NAMEDTIMEPERIOD                      NEXT     *   |  O(") CHARACTER            
+NAMEDTIMEPERIOD1                     NEXT     *   |  O(") CHARACTER            
+DATEOFINSCRIPTIONNOTE                NEXT     *   |  O(") CHARACTER            
+ANCIENTCITYORLOCATION                NEXT     *   |  O(") CHARACTER            
+ANCIENTSTRUCTURE                     NEXT     *   |  O(") CHARACTER            
+ISFFINDSITE                          NEXT     *   |  O(") CHARACTER            
+MODERNCITYORLOCATION                 NEXT     *   |  O(") CHARACTER            
+MODERNCOUNTRY                        NEXT     *   |  O(") CHARACTER            
+REGION                               NEXT     *   |  O(") CHARACTER            
+LOCATIONOFORIGINAL                   NEXT     *   |  O(") CHARACTER            
+LOCATIONOFORIGINAL1                  NEXT     *   |  O(") CHARACTER            
+LOCATIONOFORIGINAL2                  NEXT     *   |  O(") CHARACTER            
+LOCATIONOFORIGINAL3                  NEXT     *   |  O(") CHARACTER            
+LOCATIONOFORIGINAL4                  NEXT     *   |  O(") CHARACTER            
+LOCATIONOFORIGINAL5                  NEXT     *   |  O(") CHARACTER            
+RIGHTSPHYSICALOBJECT                 NEXT     *   |  O(") CHARACTER            
+RIGHTSPHYSICALOBJECT1                NEXT     *   |  O(") CHARACTER            
+RIGHTSPHYSICALOBJECT2                NEXT     *   |  O(") CHARACTER            
+RIGHTSPHYSICALOBJECT3                NEXT     *   |  O(") CHARACTER            
+RIGHTSPHYSICALOBJECT4                NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES1                   NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES2                   NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES3                   NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES4                   NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES5                   NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES6                   NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES7                   NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES8                   NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES9                   NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES10                  NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES11                  NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES12                  NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES13                  NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES14                  NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES15                  NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES16                  NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES17                  NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES18                  NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES19                  NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES20                  NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES21                  NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES22                  NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES23                  NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES24                  NEXT     *   |  O(") CHARACTER            
+KEYWORDSORPHRASES25                  NEXT     *   |  O(") CHARACTER            
+INDEXMAPFILENAME                     NEXT     *   |  O(") CHARACTER            
+
+
+Table TMP_TEXTOBJECT:
+  711 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 221364 bytes(6 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:           711
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Fri Apr 02 18:30:05 2004
+Run ended on Fri Apr 02 18:30:21 2004
+
+Elapsed time was:     00:00:15.97
+CPU time was:         00:00:00.47    

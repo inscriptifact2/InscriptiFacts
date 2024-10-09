@@ -1,0 +1,144 @@
+
+SQL*Loader: Release 9.0.1.1.1 - Production on Fri Mar 12 02:53:34 2004
+
+(c) Copyright 2001 Oracle Corporation.  All rights reserved.
+
+Control File:   PHOTOOBJECT.CTL
+Data File:      PHOTOOBJECT.TXT
+  Bad File:     PHOTOOBJECT.BAD
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 5000
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table TMP_PHOTOOBJECT, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+ISFDIGITALOBJECTIDENTIFIER          FIRST     *   |  O(") CHARACTER            
+PHOTOGRAPHIDENTIFICATIONNO           NEXT     *   |  O(") CHARACTER            
+THUMBNAILHEADER                      NEXT     *   |  O(") CHARACTER            
+PHOTODESCRIPTIVETITLE                NEXT     *   |  O(") CHARACTER            
+PHOTOGRAPHDESCRIPTION                NEXT     *   |  O(") CHARACTER            
+ANCIENTTEXTREPRESENTED               NEXT     *   |  O(") CHARACTER            
+ISFASSIGNEDTEXTNO                    NEXT     *   |  O(") CHARACTER            
+TEXTDIVISION                         NEXT     *   |  O(") CHARACTER            
+TEXTDIVISIONSUBDIVISION              NEXT     *   |  O(") CHARACTER            
+TEXTVIEW                             NEXT     *   |  O(") CHARACTER            
+TEXTVIEW1                            NEXT     *   |  O(") CHARACTER            
+TEXTVIEW2                            NEXT     *   |  O(") CHARACTER            
+TEXTVIEW3                            NEXT     *   |  O(") CHARACTER            
+TEXTVIEW4                            NEXT     *   |  O(") CHARACTER            
+TEXTVIEW5                            NEXT     *   |  O(") CHARACTER            
+TEXTVIEW6                            NEXT     *   |  O(") CHARACTER            
+TEXTVIEW7                            NEXT     *   |  O(") CHARACTER            
+TEXTVIEW8                            NEXT     *   |  O(") CHARACTER            
+TEXTVIEW9                            NEXT     *   |  O(") CHARACTER            
+TYPEOFITEMCATELOGED                  NEXT     *   |  O(") CHARACTER            
+PHOTOTEXTORPUBLCNNONOTE              NEXT     *   |  O(") CHARACTER            
+DATEOFPHOTOGRAPH                     NEXT     *   |  O(") CHARACTER            
+PHOTOGRAPHER1                        NEXT     *   |  O(") CHARACTER            
+PHOTOGRAPHER2                        NEXT     *   |  O(") CHARACTER            
+PHOTOGRAPHER3                        NEXT     *   |  O(") CHARACTER            
+PHOTOGRAPHER4                        NEXT     *   |  O(") CHARACTER            
+PHOTOGRAPHER5                        NEXT     *   |  O(") CHARACTER            
+RIGHTSPHYSICALOBJECT                 NEXT     *   |  O(") CHARACTER            
+RIGHTSPHYSICALOBJECT1                NEXT     *   |  O(") CHARACTER            
+RIGHTSPHYSICALOBJECT2                NEXT     *   |  O(") CHARACTER            
+RIGHTSPHYSICALOBJECT3                NEXT     *   |  O(") CHARACTER            
+RIGHTSPHYSICALOBJECT4                NEXT     *   |  O(") CHARACTER            
+ISPARTOFWSRPROJECT                   NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO               NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO1              NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO2              NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO3              NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO4              NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO5              NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO6              NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO7              NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO8              NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO9              NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO10             NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO11             NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO12             NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO13             NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO14             NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO15             NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO16             NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO17             NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO18             NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO19             NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO20             NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO21             NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO22             NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO23             NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNO24             NEXT     *   |  O(") CHARACTER            
+PHOTOMUSEUMACCESSIONNONOTE           NEXT     *   |  O(") CHARACTER            
+COLABORATOR1                         NEXT     *   |  O(") CHARACTER            
+COLABORATOR2                         NEXT     *   |  O(") CHARACTER            
+COLABORATOR3                         NEXT     *   |  O(") CHARACTER            
+COLABORATOR4                         NEXT     *   |  O(") CHARACTER            
+COLABORATOR5                         NEXT     *   |  O(") CHARACTER            
+PHOTODIMENSIONS                      NEXT     *   |  O(") CHARACTER            
+MAGNIFICATIONCODE                    NEXT     *   |  O(") CHARACTER            
+FILMTYPECODE                         NEXT     *   |  O(") CHARACTER            
+DATEOFDIGITALCONVERSION              NEXT     *   |  O(") CHARACTER            
+DIGITALOBJECTFORMAT                  NEXT     *   |  O(") CHARACTER            
+ARCHIVALFILESIZE                     NEXT     *   |  O(") CHARACTER            
+ARCHIVALFILERESOLUTION               NEXT     *   |  O(") CHARACTER            
+COMPRESSEDFORMATEXTENSION            NEXT     *   |  O(") CHARACTER            
+COMPRESSIONRATIO                     NEXT     *   |  O(") CHARACTER            
+COMPRESSIONROUTINE                   NEXT     *   |  O(") CHARACTER            
+DIGITALOBJECTTYPENOTE                NEXT     *   |  O(") CHARACTER            
+DIGITIZATIONEQUIPMENTSPECS           NEXT     *   |  O(") CHARACTER            
+RIGHTSDIGITALOBJECT                  NEXT     *   |  O(") CHARACTER            
+RIGHSPHOTOGRAPH                      NEXT     *   |  O(") CHARACTER            
+SCRIPTNOTE                           NEXT     *   |  O(") CHARACTER            
+SCRIPT                               NEXT     *   |  O(") CHARACTER            
+SCRIPTSUBLEVEL                       NEXT     *   |  O(") CHARACTER            
+SCRIPT1                              NEXT     *   |  O(") CHARACTER            
+SCRIPT1SUBLEVEL                      NEXT     *   |  O(") CHARACTER            
+SCRIPT2                              NEXT     *   |  O(") CHARACTER            
+SCRIPT2SUBLEVEL                      NEXT     *   |  O(") CHARACTER            
+SCRIPT3                              NEXT     *   |  O(") CHARACTER            
+SCRIPT3SUBLEVEL                      NEXT     *   |  O(") CHARACTER            
+LANGUAGENOTE                         NEXT     *   |  O(") CHARACTER            
+LANGUAGE                             NEXT     *   |  O(") CHARACTER            
+LANGUAGE1                            NEXT     *   |  O(") CHARACTER            
+LANGUAGE2                            NEXT     *   |  O(") CHARACTER            
+LANGUAGE3                            NEXT     *   |  O(") CHARACTER            
+ISFFINDSITE                          NEXT     *   |  O(") CHARACTER            
+RELEVANTTIMELINE                     NEXT     *   |  O(") CHARACTER            
+NAMEDTIMEPERIOD                      NEXT     *   |  O(") CHARACTER            
+NAMEDTIMEPERIOD1                     NEXT     *   |  O(") CHARACTER            
+MEDIUM                               NEXT     *   |  O(") CHARACTER            
+
+
+Table TMP_PHOTOOBJECT:
+  5742 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 250260 bytes(10 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:          5742
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Fri Mar 12 02:53:34 2004
+Run ended on Fri Mar 12 02:53:55 2004
+
+Elapsed time was:     00:00:21.43
+CPU time was:         00:00:01.01    

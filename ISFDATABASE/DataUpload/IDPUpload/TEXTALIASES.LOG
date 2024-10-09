@@ -1,0 +1,53 @@
+
+SQL*Loader: Release 9.0.1.1.1 - Production on Sun Feb 1 09:44:16 2004
+
+(c) Copyright 2001 Oracle Corporation.  All rights reserved.
+
+Control File:   TEXTALIASES.CTL
+Data File:      TEXTALIASES.TXT
+  Bad File:     TEXTALIASES.BAD
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 5000
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table TMP_TEXTALIASES, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+ALTTEXTORPUBLCNNO                   FIRST     *   |  O(") CHARACTER            
+ISFASSIGNEDTEXTNO                    NEXT     *   |  O(") CHARACTER            
+MAINTEXTORPUBLCNNO                   NEXT     *   |  O(") CHARACTER            
+TEXTDESCRPTIVETITLE                  NEXT     *   |  O(") CHARACTER            
+ALTTEXTORPUBLCNNOPREFIX              NEXT     *   |  O(") CHARACTER            
+ALTTEXTORPUBLCNNOSUFFIX              NEXT     *   |  O(") CHARACTER            
+
+
+Table TMP_TEXTALIASES:
+  509 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  99072 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:           509
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Sun Feb 01 09:44:16 2004
+Run ended on Sun Feb 01 09:44:31 2004
+
+Elapsed time was:     00:00:15.17
+CPU time was:         00:00:00.09    

@@ -1,0 +1,26 @@
+
+SQL*Plus: Release 9.0.1.0.1 - Production on Fri Apr 2 18:28:16 2004
+
+(c) Copyright 2001 Oracle Corporation.  All rights reserved.
+
+
+Connected to:
+Oracle9i Enterprise Edition Release 9.0.1.1.1 - Production
+With the Partitioning option
+JServer Release 9.0.1.1.1 - Production
+
+
+14 rows deleted.
+
+
+57 rows deleted.
+
+
+0 rows deleted.
+
+
+Commit complete.
+
+Disconnected from Oracle9i Enterprise Edition Release 9.0.1.1.1 - Production
+With the Partitioning option
+JServer Release 9.0.1.1.1 - Production

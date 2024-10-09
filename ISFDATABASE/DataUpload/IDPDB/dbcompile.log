@@ -1,0 +1,664 @@
+
+SQL*Plus: Release 9.0.1.0.1 - Production on Sun Jan 25 19:46:40 2004
+
+(c) Copyright 2001 Oracle Corporation.  All rights reserved.
+
+
+Connected to:
+Oracle9i Enterprise Edition Release 9.0.1.1.1 - Production
+With the Partitioning option
+JServer Release 9.0.1.1.1 - Production
+
+
+User dropped.
+
+
+User created.
+
+
+Grant succeeded.
+
+Connected.
+Creation of Objects
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+Creation of ISFUSERS
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+
+Commit complete.
+
+Creation of LoginDetails
+
+Table created.
+
+Creation of CorpusObject
+
+Table created.
+
+Creation of LoginSequenceNumber
+
+Sequence created.
+
+ISF USers Limit table Creation
+
+Table created.
+
+
+1 row created.
+
+
+Commit complete.
+
+Creation Of Login Validation Procedure
+
+Warning: Procedure created with compilation errors.
+
+Creation of IndexMap
+
+Table created.
+
+Creation of TextObject
+
+Table created.
+
+Creation of Photoobject
+
+Table created.
+
+Creation of Phototextdivision
+
+Table created.
+
+Creation of Spatialreferencing
+
+Table created.
+
+Creation of TimeperiodObject
+
+Table created.
+
+Creation of Object Views
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+Type created.
+
+
+Function created.
+
+
+Function created.
+
+
+View created.
+
+Creation of Indexes
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+Creation of Data Migration Scripts
+Creation of TmpTablesCreation procedure
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+Creation of CorpusObjectInsert procedure
+
+Procedure created.
+
+Creation of IndexMapInsert procedure
+
+Procedure created.
+
+Creation of PhotoobjectInsert procedure
+
+Procedure created.
+
+Creation of SpatialreferencingInsert procedure
+
+Procedure created.
+
+Creation of textobjectInsert procedure
+
+Procedure created.
+
+Creation of TimeperiodObjectInsert Procedure
+
+Procedure created.
+
+Temporary tables cleaning Procedures Creation
+Tmp_corpusObject Clean Procedure creation
+
+Procedure created.
+
+Tmp_IndexMap Clean Procedure creation
+
+Procedure created.
+
+Tmp_Photoobject Procedure creation
+
+Procedure created.
+
+Tmp_spatialreferencing Procedure creation
+
+Procedure created.
+
+Tmp_spatialreferencing Procedure creation
+
+Procedure created.
+
+Tmp_spatialreferencing Procedure creation
+
+Procedure created.
+
+Tmp_spatialreferencing Procedure creation
+
+Procedure created.
+
+Tmp_spatialreferencing Procedure creation
+
+Procedure created.
+
+
+SUBSTR(OBJECT_NAME,1,50)			   OBJECT_TYPE	      TIMESTAMP
+-------------------------------------------------- ------------------ -------------------
+ALTTEXTTITLE_VA 				   TYPE 	      2004-01-25:19:46:59
+ANCIENTTEXTREPRESENTED_VA			   TYPE 	      2004-01-25:19:47:00
+CLEANTMP_CORPUSOBJECT				   PROCEDURE	      2004-01-25:19:47:02
+CLEANTMP_INDEXMAP				   PROCEDURE	      2004-01-25:19:47:03
+CLEANTMP_PHOTOOBJECT				   PROCEDURE	      2004-01-25:19:47:03
+CLEANTMP_SPATIALREFERENCING			   PROCEDURE	      2004-01-25:19:47:03
+CLEANTMP_TEXTALIASES				   PROCEDURE	      2004-01-25:19:47:03
+CLEANTMP_TEXTDIVISION				   PROCEDURE	      2004-01-25:19:47:03
+CLEANTMP_TEXTOBJECT				   PROCEDURE	      2004-01-25:19:47:03
+CLEANTMP_TIMEPERIODOBJECT			   PROCEDURE	      2004-01-25:19:47:03
+COLABORATOR_VA					   TYPE 	      2004-01-25:19:47:00
+
+SUBSTR(OBJECT_NAME,1,50)			   OBJECT_TYPE	      TIMESTAMP
+-------------------------------------------------- ------------------ -------------------
+CORPUSCATEGORY_NT				   TYPE 	      2004-01-25:19:46:59
+CORPUSCATEGORY_NT_TAB				   TABLE	      2004-01-25:19:47:00
+CORPUSCATEGORY_TY				   TYPE 	      2004-01-25:19:46:59
+CORPUSOBJECT					   TABLE	      2004-01-25:19:47:00
+CORPUSOBJECTINSERT				   PROCEDURE	      2004-01-25:19:47:02
+CORPUSOBJECT_OV 				   VIEW 	      2004-01-25:19:47:01
+CORPUSOBJECT_OV_TY				   TYPE 	      2004-01-25:19:47:00
+CORPUSOBJECT_PK1				   INDEX	      2004-01-25:19:47:00
+CORPUSSUBCATEGORY_NT				   TYPE 	      2004-01-25:19:46:59
+CORPUSSUBCATEGORY_NT_TAB			   TABLE	      2004-01-25:19:47:00
+CORPUSSUBCATEGORY_TY				   TYPE 	      2004-01-25:19:46:59
+
+SUBSTR(OBJECT_NAME,1,50)			   OBJECT_TYPE	      TIMESTAMP
+-------------------------------------------------- ------------------ -------------------
+ERR_CORPUSOBJECT				   TABLE	      2004-01-25:19:47:02
+ERR_INDEXMAP					   TABLE	      2004-01-25:19:47:02
+ERR_PHOTOOBJECT 				   TABLE	      2004-01-25:19:47:02
+ERR_SPATIALREFERENCING				   TABLE	      2004-01-25:19:47:02
+ERR_TEXTOBJECT					   TABLE	      2004-01-25:19:47:02
+ERR_TIMEPERIODOBJECT				   TABLE	      2004-01-25:19:47:02
+EXCAVATIONNO_VA 				   TYPE 	      2004-01-25:19:46:59
+INDEXMAP					   TABLE	      2004-01-25:19:47:00
+INDEXMAPFILENAME_VA				   TYPE 	      2004-01-25:19:47:00
+INDEXMAPINSERT					   PROCEDURE	      2004-01-25:19:47:02
+ISFASSIGNEDTEXTNO_VA				   TYPE 	      2004-01-25:19:47:00
+
+SUBSTR(OBJECT_NAME,1,50)			   OBJECT_TYPE	      TIMESTAMP
+-------------------------------------------------- ------------------ -------------------
+ISFFINDSITE_OV					   VIEW 	      2004-01-25:19:47:01
+ISFFINDSITE_OV_TY				   TYPE 	      2004-01-25:19:46:59
+ISFLOGIN					   PROCEDURE	      2004-01-25:19:47:00
+ISFUSERS					   TABLE	      2004-01-25:19:47:00
+ISFUSERS_PK1					   INDEX	      2004-01-25:19:47:00
+ISFUSRLIMIT					   TABLE	      2004-01-25:19:47:00
+ISPARTOFCORPUSCATEGORY_VA			   TYPE 	      2004-01-25:19:46:59
+ISPARTOFCORPUSSUBCATEGORY_VA			   TYPE 	      2004-01-25:19:47:00
+ISPARTOFCORPUS_VA				   TYPE 	      2004-01-25:19:46:59
+IXCORPSUBCAT					   INDEX	      2004-01-25:19:47:01
+IXCORPUSSEQCAT					   INDEX	      2004-01-25:19:47:01
+
+SUBSTR(OBJECT_NAME,1,50)			   OBJECT_TYPE	      TIMESTAMP
+-------------------------------------------------- ------------------ -------------------
+IXINDEXMAP					   INDEX	      2004-01-25:19:47:01
+IXSCRIPTNT					   INDEX	      2004-01-25:19:47:01
+IXTEXTALIASESNT 				   INDEX	      2004-01-25:19:47:01
+IXTMPPHOBJ1					   INDEX	      2004-01-25:19:47:02
+IXTMPTXTOBJ1					   INDEX	      2004-01-25:19:47:02
+IXTXMAINTXTORPUBLICNOPREF			   INDEX	      2004-01-25:19:47:01
+IXTXTDIVNT					   INDEX	      2004-01-25:19:47:01
+IXTXTDIVSUBDIVNT				   INDEX	      2004-01-25:19:47:01
+IX_CP_CORPUSNAME				   INDEX	      2004-01-25:19:47:01
+IX_CP_CORPUSSEQNUM				   INDEX	      2004-01-25:19:47:01
+IX_PH_DATEOFPHOTOGRAPH				   INDEX	      2004-01-25:19:47:01
+
+SUBSTR(OBJECT_NAME,1,50)			   OBJECT_TYPE	      TIMESTAMP
+-------------------------------------------------- ------------------ -------------------
+IX_PH_FILMTYPECODE				   INDEX	      2004-01-25:19:47:01
+IX_PH_ISFFINDSITE				   INDEX	      2004-01-25:19:47:01
+IX_PH_MAGNIFICATIONCODE 			   INDEX	      2004-01-25:19:47:01
+IX_PH_PGRAPHID_NO				   INDEX	      2004-01-25:19:47:01
+IX_TM_TIMELINENAME				   INDEX	      2004-01-25:19:47:01
+IX_TM_TIMEPERIOD				   INDEX	      2004-01-25:19:47:01
+IX_TM_TIMEPERIODBEGINDATE			   INDEX	      2004-01-25:19:47:01
+IX_TX_ISFFINDSITE				   INDEX	      2004-01-25:19:47:01
+IX_TX_MAINTEXTORPUBLCNNO			   INDEX	      2004-01-25:19:47:01
+IX_TX_MEDIUM					   INDEX	      2004-01-25:19:47:01
+IX_TX_SPATIALSEARCHCODE 			   INDEX	      2004-01-25:19:47:01
+
+SUBSTR(OBJECT_NAME,1,50)			   OBJECT_TYPE	      TIMESTAMP
+-------------------------------------------------- ------------------ -------------------
+KEYWORDSORPHRASES_OV				   VIEW 	      2004-01-25:19:47:01
+KEYWORDSORPHRASES_OV_TY 			   TYPE 	      2004-01-25:19:46:59
+KEYWORDSORPHRASES_VA				   TYPE 	      2004-01-25:19:47:00
+LANGUAGE_OV					   VIEW 	      2004-01-25:19:47:01
+LANGUAGE_OV_TY					   TYPE 	      2004-01-25:19:46:59
+LANGUAGE_VA					   TYPE 	      2004-01-25:19:47:00
+LOCATIONOFORIGINAL_OV_TY			   TYPE 	      2004-01-25:19:46:59
+LOCATIONOFORIGINAL_VA				   TYPE 	      2004-01-25:19:47:00
+LOCNOFORIGIN_OV 				   VIEW 	      2004-01-25:19:47:01
+LOGINDETAILS					   TABLE	      2004-01-25:19:47:00
+LOGINDETAILS_PK1				   INDEX	      2004-01-25:19:47:00
+
+SUBSTR(OBJECT_NAME,1,50)			   OBJECT_TYPE	      TIMESTAMP
+-------------------------------------------------- ------------------ -------------------
+LOGINSEQNO					   SEQUENCE	      2004-01-25:19:47:00
+MAINORALTTEXTORPUBLCN_OV			   VIEW 	      2004-01-25:19:47:01
+MAINORALTTEXTORPUBLCN_OV_TY			   TYPE 	      2004-01-25:19:46:59
+MUSEUMACCESSIONNO_VA				   TYPE 	      2004-01-25:19:47:00
+NAMEDTIMEPERIOD_VA				   TYPE 	      2004-01-25:19:47:00
+PHOTOGRAPHER_VA 				   TYPE 	      2004-01-25:19:47:00
+PHOTOMUSEUMACCESSIONNO_VA			   TYPE 	      2004-01-25:19:47:00
+PHOTOOBJECT					   TABLE	      2004-01-25:19:47:01
+PHOTOOBJECTINSERT				   PROCEDURE	      2004-01-25:19:47:02
+PHOTOOBJECT_PK1 				   INDEX	      2004-01-25:19:47:01
+PHOTOTEXTORPUBLCNNONOTE_VA			   TYPE 	      2004-01-25:19:47:00
+
+SUBSTR(OBJECT_NAME,1,50)			   OBJECT_TYPE	      TIMESTAMP
+-------------------------------------------------- ------------------ -------------------
+PHOTOTEXTTEXTDIVISION				   TABLE	      2004-01-25:19:47:01
+PHOTOTEXTTEXTDIVISION_OV			   VIEW 	      2004-01-25:19:47:01
+PHOTOTEXTTEXTDIVISION_OV_TY			   TYPE 	      2004-01-25:19:47:00
+PHYSICALOBJECTNOTE_VA				   TYPE 	      2004-01-25:19:47:00
+RIGHTSPHYSICALOBJECT_VA 			   TYPE 	      2004-01-25:19:47:00
+SCRIPTSUBLEVEL_VA				   TYPE 	      2004-01-25:19:47:00
+SCRIPT_NT					   TYPE 	      2004-01-25:19:47:00
+SCRIPT_NT_TAB					   TABLE	      2004-01-25:19:47:00
+SCRIPT_OV					   VIEW 	      2004-01-25:19:47:01
+SCRIPT_OV_TY					   TYPE 	      2004-01-25:19:46:59
+SCRIPT_TY					   TYPE 	      2004-01-25:19:47:00
+
+SUBSTR(OBJECT_NAME,1,50)			   OBJECT_TYPE	      TIMESTAMP
+-------------------------------------------------- ------------------ -------------------
+SCRIPT_VA					   TYPE 	      2004-01-25:19:47:00
+SPATIALREFERENCING				   TABLE	      2004-01-25:19:47:01
+SPATIALREFERENCINGINSERT			   PROCEDURE	      2004-01-25:19:47:02
+SPATIALREFERENCING_PK5				   INDEX	      2004-01-25:19:47:01
+SYS_C002792					   INDEX	      2004-01-25:19:47:00
+SYS_C002794					   INDEX	      2004-01-25:19:47:00
+SYS_C002795					   INDEX	      2004-01-25:19:47:00
+SYS_C002797					   INDEX	      2004-01-25:19:47:00
+SYS_C002798					   INDEX	      2004-01-25:19:47:00
+SYS_C002799					   INDEX	      2004-01-25:19:47:00
+SYS_LOB0000032845C00034$$			   LOB		      2004-01-25:19:47:01
+
+SUBSTR(OBJECT_NAME,1,50)			   OBJECT_TYPE	      TIMESTAMP
+-------------------------------------------------- ------------------ -------------------
+SYS_LOB0000032845C00035$$			   LOB		      2004-01-25:19:47:01
+SYS_LOB0000032845C00044$$			   LOB		      2004-01-25:19:47:01
+SYS_LOB0000032845C00045$$			   LOB		      2004-01-25:19:47:01
+SYS_LOB0000032845C00046$$			   LOB		      2004-01-25:19:47:01
+SYS_LOB0000032845C00047$$			   LOB		      2004-01-25:19:47:01
+SYS_YOID0000032863$				   TYPE 	      2004-01-25:19:47:01
+SYS_YOID0000032865$				   TYPE 	      2004-01-25:19:47:01
+SYS_YOID0000032867$				   TYPE 	      2004-01-25:19:47:01
+SYS_YOID0000032869$				   TYPE 	      2004-01-25:19:47:01
+SYS_YOID0000032871$				   TYPE 	      2004-01-25:19:47:01
+SYS_YOID0000032873$				   TYPE 	      2004-01-25:19:47:01
+
+SUBSTR(OBJECT_NAME,1,50)			   OBJECT_TYPE	      TIMESTAMP
+-------------------------------------------------- ------------------ -------------------
+SYS_YOID0000032875$				   TYPE 	      2004-01-25:19:47:01
+SYS_YOID0000032877$				   TYPE 	      2004-01-25:19:47:01
+SYS_YOID0000032879$				   TYPE 	      2004-01-25:19:47:01
+SYS_YOID0000032881$				   TYPE 	      2004-01-25:19:47:01
+SYS_YOID0000032887$				   TYPE 	      2004-01-25:19:47:01
+TEMP_COV1					   FUNCTION	      2004-01-25:19:47:01
+TEMP_COV2					   FUNCTION	      2004-01-25:19:47:01
+TEMP_COVER_VA					   TYPE 	      2004-01-25:19:47:01
+TEXTALIASES_NT					   TYPE 	      2004-01-25:19:46:59
+TEXTALIASES_NT_TAB				   TABLE	      2004-01-25:19:47:00
+TEXTALIASES_TY					   TYPE 	      2004-01-25:19:46:59
+
+SUBSTR(OBJECT_NAME,1,50)			   OBJECT_TYPE	      TIMESTAMP
+-------------------------------------------------- ------------------ -------------------
+TEXTDIVISIONSUBDIVISION_NT			   TYPE 	      2004-01-25:19:46:59
+TEXTDIVISIONSUBDIVISION_NT_TAB			   TABLE	      2004-01-25:19:47:00
+TEXTDIVISIONSUBDIVISION_TY			   TYPE 	      2004-01-25:19:46:59
+TEXTDIVISIONSUBDIVISION_VA			   TYPE 	      2004-01-25:19:47:00
+TEXTDIVISION_NT 				   TYPE 	      2004-01-25:19:46:59
+TEXTDIVISION_NT_TAB				   TABLE	      2004-01-25:19:47:00
+TEXTDIVISION_OV 				   VIEW 	      2004-01-25:19:47:01
+TEXTDIVISION_OV_TY				   TYPE 	      2004-01-25:19:47:00
+TEXTDIVISION_TY 				   TYPE 	      2004-01-25:19:46:59
+TEXTDIVISION_VA 				   TYPE 	      2004-01-25:19:47:00
+TEXTOBJECT					   TABLE	      2004-01-25:19:47:00
+
+SUBSTR(OBJECT_NAME,1,50)			   OBJECT_TYPE	      TIMESTAMP
+-------------------------------------------------- ------------------ -------------------
+TEXTOBJECTINSERT				   PROCEDURE	      2004-01-25:19:47:02
+TEXTOBJECT_OV					   VIEW 	      2004-01-25:19:47:01
+TEXTOBJECT_OV1					   VIEW 	      2004-01-25:19:47:01
+TEXTOBJECT_OV_TY				   TYPE 	      2004-01-25:19:47:00
+TEXTOBJECT_OV_TY1				   TYPE 	      2004-01-25:19:47:00
+TEXTOBJECT_PK1					   INDEX	      2004-01-25:19:47:00
+TEXTORPUBLCNNONOTE_VA				   TYPE 	      2004-01-25:19:47:00
+TEXTVIEW_VA					   TYPE 	      2004-01-25:19:47:00
+TIMEPERIODOBJECT				   TABLE	      2004-01-25:19:47:01
+TIMEPERIODOBJECTINSERT				   PROCEDURE	      2004-01-25:19:47:02
+TMP_CORPUSOBJECT				   TABLE	      2004-01-25:19:47:01
+
+SUBSTR(OBJECT_NAME,1,50)			   OBJECT_TYPE	      TIMESTAMP
+-------------------------------------------------- ------------------ -------------------
+TMP_INDEXMAP					   TABLE	      2004-01-25:19:47:01
+TMP_PHOTOOBJECT 				   TABLE	      2004-01-25:19:47:02
+TMP_SPATIALREFERENCING				   TABLE	      2004-01-25:19:47:01
+TMP_TEXTALIASES 				   TABLE	      2004-01-25:19:47:01
+TMP_TEXTDIVISION				   TABLE	      2004-01-25:19:47:01
+TMP_TEXTOBJECT					   TABLE	      2004-01-25:19:47:01
+TMP_TIMEPERIODOBJECT				   TABLE	      2004-01-25:19:47:02
+
+161 rows selected.
+
+Disconnected from Oracle9i Enterprise Edition Release 9.0.1.1.1 - Production
+With the Partitioning option
+JServer Release 9.0.1.1.1 - Production

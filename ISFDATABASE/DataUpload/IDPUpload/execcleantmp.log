@@ -1,0 +1,40 @@
+
+SQL*Plus: Release 9.0.1.0.1 - Production on Sun Feb 1 09:41:40 2004
+
+(c) Copyright 2001 Oracle Corporation.  All rights reserved.
+
+
+Connected to:
+Oracle9i Enterprise Edition Release 9.0.1.1.1 - Production
+With the Partitioning option
+JServer Release 9.0.1.1.1 - Production
+
+Deleting rows from tmp tables
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+Deleted rows from tmp tables
+Disconnected from Oracle9i Enterprise Edition Release 9.0.1.1.1 - Production
+With the Partitioning option
+JServer Release 9.0.1.1.1 - Production

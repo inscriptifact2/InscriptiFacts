@@ -1,0 +1,4 @@
+#!/bin/bash
+restart_lizardtech
+restart_apache
+restart_weblogic.sh

@@ -1,0 +1,54 @@
+
+SQL*Loader: Release 9.0.1.1.1 - Production on Fri Apr 2 18:28:33 2004
+
+(c) Copyright 2001 Oracle Corporation.  All rights reserved.
+
+Control File:   Corpusobject.CTL
+Data File:      corpusobject.TXT
+  Bad File:     corpusobject.BAD
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 5000
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table TMP_CORPUSOBJECT, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+ISFASSIGNEDCORPUSIDNO               FIRST     *   |  O(") CHARACTER            
+CORPUSNAME                           NEXT     *   |  O(") CHARACTER            
+CORPUSDESC                           NEXT     *   |  O(") CHARACTER            
+CORPUSCATEGORY                       NEXT     *   |  O(") CHARACTER            
+CORPUSCATEGORYSEQNO                  NEXT     *   |  O(") CHARACTER            
+CORPUSSUBCATEGORY                    NEXT     *   |  O(") CHARACTER            
+CORPUSSUBCATEGORYSEQNO               NEXT     *   |  O(") CHARACTER            
+
+
+Table TMP_CORPUSOBJECT:
+  58 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 115584 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:            58
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Fri Apr 02 18:28:33 2004
+Run ended on Fri Apr 02 18:28:48 2004
+
+Elapsed time was:     00:00:15.31
+CPU time was:         00:00:00.19    

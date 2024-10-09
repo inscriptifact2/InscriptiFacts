@@ -1,0 +1,29 @@
+
+SQL*Plus: Release 9.0.1.0.1 - Production on Fri Mar 12 02:52:08 2004
+
+(c) Copyright 2001 Oracle Corporation.  All rights reserved.
+
+
+Connected to:
+Oracle9i Enterprise Edition Release 9.0.1.1.1 - Production
+With the Partitioning option
+JServer Release 9.0.1.1.1 - Production
+
+
+5063 rows deleted.
+
+
+7096 rows deleted.
+
+delete from err_phototobject
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+
+Commit complete.
+
+Disconnected from Oracle9i Enterprise Edition Release 9.0.1.1.1 - Production
+With the Partitioning option
+JServer Release 9.0.1.1.1 - Production

@@ -1,0 +1,59 @@
+"ISF Corpus Identification Number"|"Corpus Name"|"Corpus Description"|"Corpus Category"|"Corpus Category Sequencing Number"|"Corpus Sub-Category"|"Corpus Sub-Category Sequencing Number"
+"ISF_CRP_0001"|"Aramaic Texts from Ancient Egypt"|"Papyri, ostraca, and other inscriptions found primarily at Elephantine and Syene."|"Literary Texts"|1||
+"ISF_CRP_0001"|"Aramaic Texts from Ancient Egypt"|"Papyri, ostraca, and other inscriptions found primarily at Elephantine and Syene."|"Historical Texts"|2||
+"ISF_CRP_0001"|"Aramaic Texts from Ancient Egypt"|"Papyri, ostraca, and other inscriptions found primarily at Elephantine and Syene."|"Religious Texts"|3||
+"ISF_CRP_0001"|"Aramaic Texts from Ancient Egypt"|"Papyri, ostraca, and other inscriptions found primarily at Elephantine and Syene."|"Letters"|4|"Jedaniah Communal Archive"|1
+"ISF_CRP_0001"|"Aramaic Texts from Ancient Egypt"|"Papyri, ostraca, and other inscriptions found primarily at Elephantine and Syene."|"Letters"||"Other Letters"|2
+"ISF_CRP_0001"|"Aramaic Texts from Ancient Egypt"|"Papyri, ostraca, and other inscriptions found primarily at Elephantine and Syene."|"Contracts"|5|"Anani Archive"|1
+"ISF_CRP_0001"|"Aramaic Texts from Ancient Egypt"|"Papyri, ostraca, and other inscriptions found primarily at Elephantine and Syene."|"Contracts"||"Other Contracts"|2
+"ISF_CRP_0001"|"Aramaic Texts from Ancient Egypt"|"Papyri, ostraca, and other inscriptions found primarily at Elephantine and Syene."|"Accounts"|6||
+"ISF_CRP_0001"|"Aramaic Texts from Ancient Egypt"|"Papyri, ostraca, and other inscriptions found primarily at Elephantine and Syene."|"Reports"|7||
+"ISF_CRP_0001"|"Aramaic Texts from Ancient Egypt"|"Papyri, ostraca, and other inscriptions found primarily at Elephantine and Syene."|"Endorsements"|8||
+"ISF_CRP_0001"|"Aramaic Texts from Ancient Egypt"|"Papyri, ostraca, and other inscriptions found primarily at Elephantine and Syene."|"Lists"|9||
+"ISF_CRP_0001"|"Aramaic Texts from Ancient Egypt"|"Papyri, ostraca, and other inscriptions found primarily at Elephantine and Syene."|"Jar Inscriptions"|10||
+"ISF_CRP_0001"|"Aramaic Texts from Ancient Egypt"|"Papyri, ostraca, and other inscriptions found primarily at Elephantine and Syene."|"Stone Plaques"|11||
+"ISF_CRP_0001"|"Aramaic Texts from Ancient Egypt"|"Papyri, ostraca, and other inscriptions found primarily at Elephantine and Syene."|"Fragments"|12||
+"ISF_CRP_0001"|"Aramaic Texts from Ancient Egypt"|"Papyri, ostraca, and other inscriptions found primarily at Elephantine and Syene."|"Miscellaneous"|13||
+"ISF_CRP_0003"|"Dead Sea Scrolls"|"Ancient manuscripts from the Judaean Desert."|"Qumran Manuscripts"|1|"Qumran Cave 1"|1
+"ISF_CRP_0003"|"Dead Sea Scrolls"|"Ancient manuscripts from the Judaean Desert."|"Qumran Manuscripts"||"Qumran Cave 3"|2
+"ISF_CRP_0003"|"Dead Sea Scrolls"|"Ancient manuscripts from the Judaean Desert."|"Qumran Manuscripts"||"Qumran Cave 4"|3
+"ISF_CRP_0004"|"Scarab Amulet/Seal from Ancient Egypt"|"Scarab seals with Egyptian hieroglyphics and iconography."|"Royal Named Scarab"|1||
+"ISF_CRP_0004"|"Scarab Amulet/Seal from Ancient Egypt"|"Scarab seals with Egyptian hieroglyphics and iconography."|"Protection Scarab"|2||
+"ISF_CRP_0004"|"Scarab Amulet/Seal from Ancient Egypt"|"Scarab seals with Egyptian hieroglyphics and iconography."|"Design Scarab"|3||
+"ISF_CRP_0004"|"Scarab Amulet/Seal from Ancient Egypt"|"Scarab seals with Egyptian hieroglyphics and iconography."|"Button Seal"|4||
+"ISF_CRP_0004"|"Scarab Amulet/Seal from Ancient Egypt"|"Scarab seals with Egyptian hieroglyphics and iconography."|"Administrative Scarab"|5||
+"ISF_CRP_0005"|"Northwest Semitic Monumental Inscriptions"|"Lapidary and monumental inscriptions in Northwest Semitic languages and scripts."|"Ammonite Inscriptions"|1||
+"ISF_CRP_0005"|"Northwest Semitic Monumental Inscriptions"|"Lapidary and monumental inscriptions in Northwest Semitic languages and scripts."|"Aramaic Inscriptions"|2||
+"ISF_CRP_0005"|"Northwest Semitic Monumental Inscriptions"|"Lapidary and monumental inscriptions in Northwest Semitic languages and scripts."|"Moabite Inscriptions"|4||
+"ISF_CRP_0005"|"Northwest Semitic Monumental Inscriptions"|"Lapidary and monumental inscriptions in Northwest Semitic languages and scripts."|"Phoenician Inscriptions"|5|"Inscriptions from Byblos"|1
+"ISF_CRP_0006"|"Northwest Semitic Ostraca"|"Inscribed pottery shards in Northwest Semitic languages and scripts."|"Ammonite Inscriptions"|1||
+"ISF_CRP_0006"|"Northwest Semitic Ostraca"|"Inscribed pottery shards in Northwest Semitic languages and scripts."|"Aramaic Inscriptions"|2||
+"ISF_CRP_0006"|"Northwest Semitic Ostraca"|"Inscribed pottery shards in Northwest Semitic languages and scripts."|"Hebrew Inscriptions"|3|"Other Hebrew Ostraca"|1
+"ISF_CRP_0006"|"Northwest Semitic Ostraca"|"Inscribed pottery shards in Northwest Semitic languages and scripts."|"Phoenician Inscriptions"|4||
+"ISF_CRP_0007"|"Northwest Semitic Stamp Seals and Seal Impressions"|"Stamp seals and seal impressions in Northwest Semitic languages and scripts."|"Ammonite Inscriptions"|1||
+"ISF_CRP_0007"|"Northwest Semitic Stamp Seals and Seal Impressions"|"Stamp seals and seal impressions in Northwest Semitic languages and scripts."|"Aramaic Inscriptions"|2||
+"ISF_CRP_0007"|"Northwest Semitic Stamp Seals and Seal Impressions"|"Stamp seals and seal impressions in Northwest Semitic languages and scripts."|"Hebrew Inscriptions"|3||
+"ISF_CRP_0007"|"Northwest Semitic Stamp Seals and Seal Impressions"|"Stamp seals and seal impressions in Northwest Semitic languages and scripts."|"Moabite Inscriptions"|4||
+"ISF_CRP_0007"|"Northwest Semitic Stamp Seals and Seal Impressions"|"Stamp seals and seal impressions in Northwest Semitic languages and scripts."|"Phoenician Inscriptions"|5||
+"ISF_CRP_0007"|"Northwest Semitic Stamp Seals and Seal Impressions"|"Stamp seals and seal impressions in Northwest Semitic languages and scripts."|"Other Inscriptions"|6||
+"ISF_CRP_0008"|"Ugaritic Texts"|"Ugaritic tablets from the ancient city of Ugarit."|"Legal Texts"|1||
+"ISF_CRP_0009"|"Numismatic Inscriptions"|"Coins from the Ancient World"|"Jewish Numismatic Inscriptions"|1||
+"ISF_CRP_0009"|"Numismatic Inscriptions"|"Coins from the Ancient World"|"Greek Numismatic Inscriptions"|2||
+"ISF_CRP_0009"|"Numismatic Inscriptions"|"Coins from the Ancient World"|"Roman Numismatic Inscriptions"|3||
+"ISF_CRP_0009"|"Numismatic Inscriptions"|"Coins from the Ancient World"|"Phoenician Numismatic Inscriptions"|4||
+"ISF_CRP_0009"|"Numismatic Inscriptions"|"Coins from the Ancient World"|"Other Numismatic Inscriptions"|5||
+"ISF_CRP_0010"|"Ur III Cuneiform Tablets"|"Non-alphabetic cuneiform texts from the Ur III Period."|"Sumerian Tablets"|1||
+"ISF_CRP_0010"|"Ur III Cuneiform Tablets"|"Non-alphabetic cuneiform texts from the Ur III Period."|"Old Babylonian Tablets"|2||
+"ISF_CRP_0011"|"Monumental Inscriptions"|"Lapidary and monumental inscriptions in Non-Northwest Semitic languages and scripts."|"Egyptian"|1||
+"ISF_CRP_0012"|"Non-Text Artifacts"|"Non-text objects, uninscribed and glyptic"|"Glass"|1||
+"ISF_CRP_0012"|"Non-Text Artifacts"|"Non-text objects, uninscribed and glyptic"|"Figurines and Portraits"|2||
+"ISF_CRP_0012"|"Non-Text Artifacts"|"Non-text objects, uninscribed and glyptic"|"Sealings and Seal Impressions"|3||
+"ISF_CRP_0012"|"Non-Text Artifacts"|"Non-text objects, uninscribed and glyptic"|"Jewelry"|5||
+"ISF_CRP_0012"|"Non-Text Artifacts"|"Non-text objects, uninscribed and glyptic"|"Pottery and Clay Objects"|6||
+"ISF_CRP_0012"|"Non-Text Artifacts"|"Non-text objects, uninscribed and glyptic"|"Seals"|7||
+"ISF_CRP_0013"|"Northwest Semitic Amulets and Incantations"|"Magical and apotropaic texts in Northwest Semitic languages and scripts"|"Incantation Bowls"|1||
+"ISF_CRP_0013"|"Northwest Semitic Amulets and Incantations"|"Magical and apotropaic texts in Northwest Semitic languages and scripts"|"Metal Scrolls"|2||
+"ISF_CRP_0013"|"Northwest Semitic Amulets and Incantations"|"Magical and apotropaic texts in Northwest Semitic languages and scripts"|"Other amulets"|3||
+"ISF_CRP_0014"|"Inscribed Objects, Miscellaneous"|"Objects with Northwest and Non-Northwest Semitic languages on miscellaneous media"|"Northwest Semitic Inscriptions"|1||
+"ISF_CRP_0014"|"Inscribed Objects, Miscellaneous"|"Objects with Northwest and Non-Northwest Semitic languages on miscellaneous media"|"Non-Northwest Semitic Inscriptions"|2||
+"ISF_CRP_0015"|"Non-Alphabetic Cuneiform Texts"|"Non-alphabetic cuneiform texts, including Babylonian, Akkadian, Assyrian and Sumerian"|"Non-Classified"|4||

@@ -1,0 +1,43 @@
+"Named Time Period"|"Time Line Name"|"Time Period Begin Date BCE_CE"|"Time Period Begin Date Year"|"Time Period End Date BCE_CE"|"Time Period End Date Year"|"Time Period Explanation or Description"
+"Early Bronze"|"Syro-Palestinian"|"BCE"|3300|"BCE"|2000|
+"Middle Bronze"|"Syro-Palestinian"|"BCE"|2000|"BCE"|1550|
+"Late Bronze I"|"Syro-Palestinian"|"BCE"|1550|"BCE"|1400|
+"Late Bronze II"|"Syro-Palestinian"|"BCE"|1400|"BCE"|1200|
+"Iron I"|"Syro-Palestinian"|"BCE"|1200|"BCE"|1000|
+"Iron IIA"|"Syro-Palestinian"|"BCE"|1000|"BCE"|925|
+"Iron IIB"|"Syro-Palestinian"|"BCE"|925|"BCE"|722|
+"Iron IIC"|"Syro-Palestinian"|"BCE"|722|"BCE"|586|
+"Iron III"|"Syro-Palestinian"|"BCE"|586|"BCE"|539|
+"Persian"|"Syro-Palestinian"|"BCE"|539|"BCE"|332|
+"Hellenistic"|"Syro-Palestinian"|"BCE"|332|"BCE"|63|
+"Roman"|"Syro-Palestinian"|"BCE"|63|"CE"|325|
+"Byzantine"|"Syro-Palestinian"|"CE"|325|"CE"|640|
+"Early Islamic"|"Syro-Palestinian"|"CE"|640|"CE"|1100|
+"Early Dynastic (1st-2nd Dynasties)"|"Egyptian"|"BCE"|3100|"BCE"|2700|
+"Old Kingdom (3rd-6th Dynasties)"|"Egyptian"|"BCE"|2700|"BCE"|2190|
+"First Intermediate (7th-mid-11th Dynasties)"|"Egyptian"|"BCE"|2190|"BCE"|2033|
+"Middle Kingdom"|"Egyptian"|"BCE"|2033|"BCE"|1648|
+"Second Intermediate (15th-17th Dynasties)"|"Egyptian"|"BCE"|1648|"BCE"|1540|
+"New Kingdom (18th-20th Dynasties)"|"Egyptian"|"BCE"|1550|"BCE"|1069|
+"Third Intermediate (21st-25th Dynasties)"|"Egyptian"|"BCE"|1069|"BCE"|664|
+"Late Period (26th-31st Dynasties)"|"Egyptian"|"BCE"|664|"BCE"|332|
+"Hellenistic"|"Egyptian"|"BCE"|332|"BCE"|63|
+"Roman"|"Egyptian"|"BCE"|63|"CE"|325|
+"Byzantine"|"Egyptian"|"CE"|325|"CE"|640|
+"Early Islamic"|"Egyptian"|"CE"|640|"CE"|1100|
+"Uruk Period"|"Mesopotamian"|"BCE"|"3600"|"BCE"|"3100"|
+"Jemdet Nasr Period"|"Mesopotamian"|"BCE"|"3100"|"BCE"|"2900"|
+"Early Dynastic Period"|"Mesopotamian"|"BCE"|"2900"|"BCE"|"2350"|
+"Akkad Period"|"Mesopotamian"|"BCE"|"2350"|"BCE"|"2150"|
+"Ur III Period"|"Mesopotamian"|"BCE"|"2112"|"BCE"|"2000"|
+"Old Babylonian"|"Mesopotamian"|"BCE"|"2000"|"BCE"|"1600"|
+"Old Assyrian"|"Mesopotamian"|"BCE"|"2000"|"BCE"|"1600"|
+"Kassite Period"|"Mesopotamian"|"BCE"|"1600"|"BCE"|"1200"|
+"Middle Assyrian"|"Mesopotamian"|"BCE"|"1300"|"BCE"|"900"|
+"Neo-Assyrian"|"Mesopotamian"|"BCE"|"900"|"BCE"|"600"|
+"Neo-Babylonian"|"Mesopotamian"|"BCE"|"600"|"BCE"|"539"|
+"Persian"|"Mesopotamian"|"BCE"|539|"BCE"|332|
+"Hellenistic"|"Mesopotamian"|"BCE"|332|"BCE"|63|
+"Roman"|"Mesopotamian"|"BCE"|63|"CE"|325|
+"Byzantine"|"Mesopotamian"|"CE"|325|"CE"|640|
+"Early Islamic"|"Mesopotamian"|"CE"|640|"CE"|1100|
