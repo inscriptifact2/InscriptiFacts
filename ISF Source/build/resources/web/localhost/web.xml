@@ -1,0 +1,151 @@
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+<web-app>
+  <display-name>Inscript Web Application Version 9</display-name>
+  <listener>
+		<listener-class>com.isf.webutils.SessionManager</listener-class>
+    </listener>
+	
+  <servlet>
+      <servlet-name>ISFGeneralServlet</servlet-name>
+      <servlet-class>com.isf.servlet.ISFGeneralServlet</servlet-class>
+  </servlet>
+  <servlet>
+      <servlet-name>ISFAdmin</servlet-name>
+      <servlet-class>com.isf.servlet.ISFAdmin</servlet-class>
+  </servlet>
+
+<servlet>
+        <servlet-name>PTMConfigServlet</servlet-name>
+        <servlet-class>com.isf.servlet.PTMConfigServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PTMSegmentServlet</servlet-name>
+        <servlet-class>com.isf.servlet.PTMSegmentServlet</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>com.isf.servlet.TestServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CacheManager</servlet-name>
+        <servlet-class>com.isf.servlet.CacheManager</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PTMConfigServlet</servlet-name>
+        <url-pattern>/getConfig</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PTMSegmentServlet</servlet-name>
+        <url-pattern>/getSegment</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CacheManager</servlet-name>
+        <url-pattern>/cacheManager</url-pattern>
+    </servlet-mapping>
+  <servlet-mapping>
+        <servlet-name>ISFGeneralServlet</servlet-name>
+        <url-pattern>/ISFGeneralServlet/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+        <servlet-name>ISFAdmin</servlet-name>
+        <url-pattern>/isf-admin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/ts</url-pattern>
+  </servlet-mapping>
+  
+
+
+ <session-config>
+     <session-timeout>120</session-timeout>
+ </session-config>
+ 
+  <mime-mapping>
+    <extension>html</extension>
+    <mime-type>text/html</mime-type>
+  </mime-mapping>
+  <mime-mapping>
+    <extension>htm</extension>
+    <mime-type>text/html</mime-type>
+  </mime-mapping>
+  <mime-mapping>
+    <extension>gif</extension>
+    <mime-type>image/gif</mime-type>
+  </mime-mapping>
+  <mime-mapping>
+    <extension>jpeg</extension>
+    <mime-type>image/jpeg</mime-type>
+  </mime-mapping>
+  <mime-mapping>
+    <extension>jpg</extension>
+    <mime-type>image/jpeg</mime-type>
+  </mime-mapping>
+  <mime-mapping>
+    <extension>pdf</extension>
+    <mime-type>application/pdf</mime-type>
+  </mime-mapping>
+  <mime-mapping>
+    <extension>zip</extension>
+    <mime-type>application/zip</mime-type>
+  </mime-mapping>
+  <mime-mapping>
+    <extension>class</extension>
+    <mime-type>application/x-java-vm</mime-type>
+  </mime-mapping>
+  <mime-mapping>
+    <extension>jar</extension>
+    <mime-type>application/x-java-archive</mime-type>
+  </mime-mapping>
+  
+  <mime-mapping>
+     <extension>jnlp</extension>
+     <mime-type>application/x-java-jnlp-file</mime-type>
+  </mime-mapping>
+  
+  <mime-mapping>
+    <extension>ser</extension>
+    <mime-type>application/x-java-serialized</mime-type>
+  </mime-mapping>
+  <mime-mapping>
+    <extension>exe</extension>
+    <mime-type>application/octet-stream</mime-type>
+  </mime-mapping>
+  <mime-mapping>
+    <extension>wml</extension>
+    <mime-type>text/vnd.wap.wml</mime-type>
+  </mime-mapping>
+  <mime-mapping>
+    <extension>wmls</extension>
+    <mime-type>text/vnd.wap.wmlscript</mime-type>
+  </mime-mapping>
+  <mime-mapping>
+    <extension>wmlc</extension>
+    <mime-type>application/vnd.wap.wmlc</mime-type>
+  </mime-mapping>
+  <mime-mapping>
+    <extension>wmlsc</extension>
+    <mime-type>application/vnd.wap.wmlscript</mime-type>
+  </mime-mapping>
+  <mime-mapping>
+    <extension>wbmp</extension>
+    <mime-type>image/vnd.wap.wbmp</mime-type>
+  </mime-mapping>
+
+
+  
+</web-app>
+
+
+
+
+
+
+
+
+
+
+
+
+

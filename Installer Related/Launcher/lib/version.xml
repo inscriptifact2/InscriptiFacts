@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<application>
+<name>Viewer</name>
+<version>10.0.0.5L</version>
+<build>250<build>
+<host>www.inscriptifact.com</host>
+<installdir>/Users/kameshnittala/Public/ISFSource/Launcher</installdir>
+<javahome>/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk</javahome>
+<maxheap>1300m</maxheap>
+<minheap>768m</minheap>
+</application>

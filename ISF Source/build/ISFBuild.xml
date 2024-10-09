@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Inscriptifact" default="Lannea">
+   <property file="inscriptifact.properties"/>
+    <target name= "init" >
+        <taskdef resource="proguard/ant/task.properties"
+                 classpath="${progaurd.path}" />
+    </target > 
+    
+    <property name="compiler.generate.no.warnings" value="off"/>
+    <property name="compiler.args" value=""/>
+    <property name="compiler.max.memory" value="128m"/>
+    <patternset id="compiler.excluded"/>
+    <patternset id="compiler.resources">
+        <include name="**/?*.properties"/>
+        <include name="**/?*.xml"/>
+        <include name="**/?*.html"/>
+        <include name="**/?*.gif"/>
+        <include name="**/?*.png"/>
+        <include name="**/?*.jpeg"/>
+        <include name="**/?*.jpg"/>
+    </patternset>
+    <path id="server.classpath">
+        <fileset dir="${java.jdk}">
+            <include name="jre/lib/i18n.jar"/>
+            <include name="jre/lib/jaws.jar"/>
+            <include name="jre/lib/rt.jar"/>
+            <include name="jre/lib/sunrsasign.jar"/>
+        </fileset>
+    </path>
+    <path id="java.classpath">
+        <fileset dir="${java.jdk}">
+            <include name="jre/lib/rt.jar"/>
+        </fileset>
+    </path>
+
+
+    <property name="project.jdk.home" value="${java.jdk}"/>
+    <property name="project.jdk.classpath" value="java.classpath"/>
+
+
+    <path id="project.server">
+        <pathelement location="${weblogic.path}/api.jar" />
+    </path>
+    
+    <path id="project.client">
+    <!--    <pathelement location="${weblogic.path}/com.bea.core.apache.xercesImpl_2.8.1.jar"/> -->
+    </path>
+     
+    <path id="module.bootclasspath"></path>
+    <path id="launcher.bootclasspath">
+        <path refid="java.classpath"/>
+        <pathelement location="${lib.path}/log4j_unsigned.jar"/>
+    </path>
+    <path id="filehandler.bootclasspath">
+        <path refid="java.classpath"/>
+        <pathelement location="${src.filehandler}/../rt_mac.jar"/>
+    </path>
+    <path id="launcherisf.bootclasspath">
+        <path refid="java.classpath"/>
+        <pathelement location="${lib.path}/log4j_unsigned.jar"/>
+    </path>
+    <path id="ptm.module.classpath">
+        <path refid="java.classpath"/>
+        <pathelement location="${lib.path}/unsigned/vecmath_unsigned.jar"/>
+        <pathelement location="${lib.path}/log4j_unsigned.jar"/>
+        <pathelement location="${lib.path}/ISFCommons_unsigned.jar"/>
+     </path>
+    
+    <path id="cache.module.classpath">
+        <path refid="java.classpath"/>
+        <pathelement location="${lib.path}/unsigned/vecmath_unsigned.jar"/>
+        <pathelement location="${lib.path}/unsigned/ISFCommons_unsigned.jar"/>
+        <pathelement location="${lib.path}/unsigned/PTMAPI_unsigned.jar"/>
+        <pathelement location="${lib.path}/log4j_unsigned.jar"/>
+    </path>
+
+    <path id="isfclient.module.classpath">
+        <path refid="java.classpath"/>
+        <path refid="project.client"/>
+        <pathelement location="${lib.path}/httpcodec13_unsigned.jar"/>
+        <pathelement location="${lib.path}/httpclient30_unsigned.jar"/>
+        <pathelement location="${lib.path}/unsigned/PTMAPI_unsigned.jar"/>
+        <pathelement location="${lib.path}/log4j_unsigned.jar"/>
+        <pathelement location="${lib.path}/unsigned/ISFCommons_unsigned.jar"/>
+        <pathelement location="${lib.path}/unsigned/cache.jar"/>
+        <pathelement location="${lib.path}/unsigned/ISFControls_unsigned.jar"/>
+        <pathelement location="${lib.path}/jai_imageio_unsigned.jar"/>
+        <pathelement location="${lib.path}/unsigned/ISFNetConnect_unsigned.jar"/>
+    </path>
+    
+    
+    <path id="isfcontrols.module.classpath">
+        <path refid="java.classpath"/>
+        <path refid="project.client"/>
+       <!-- <pathelement location="${lib.path}/httpcodec13_unsigned.jar"/>
+        <pathelement location="${lib.path}/httpclient30_unsigned.jar"/> -->
+        <pathelement location="${lib.path}/unsigned/PTMAPI_unsigned.jar"/>
+        <pathelement location="${lib.path}/log4j_unsigned.jar"/>
+        <!--<pathelement location="${lib.path}/logging_unsigned.jar"/> -->
+        <pathelement location="${lib.path}/jai_imageio_unsigned.jar"/>
+        <pathelement location="${lib.path}/unsigned/ISFCommons_unsigned.jar"/>
+        <pathelement location="${lib.path}/unsigned/vecmath_unsigned.jar"/>
+        <pathelement location="${lib.path}/unsigned/cache.jar"/>
+    </path>
+    
+    <path id="isfviewer.module.classpath">
+        <path refid="java.classpath"/>
+        <path refid="project.client"/>
+      <!--  <pathelement location="${lib.path}/httpcodec13_unsigned.jar"/>
+        <pathelement location="${lib.path}/httpclient30_unsigned.jar"/> -->
+        <pathelement location="${lib.path}/unsigned/cache.jar"/>
+        <pathelement location="${lib.path}/unsigned/PTMAPI_unsigned.jar"/>
+        <pathelement location="${lib.path}/log4j_unsigned.jar"/>
+       <!-- <pathelement location="${lib.path}/logging_unsigned.jar"/>-->
+        <pathelement location="${lib.path}/unsigned/ISFControls_unsigned.jar"/>
+        <pathelement location="${lib.path}/unsigned/vecmath_unsigned.jar"/>
+        <pathelement location="${lib.path}/unsigned/ISFCommons_unsigned.jar"/>
+    </path>
+
+    <path id="webapp.module.classpath">
+        <path refid="java.classpath"/>
+        <path refid="isfclient.module.classpath"/>
+        <path refid="project.server"/>
+        <pathelement location="${lib.path}/unsigned/PTMAPI_unsigned.jar"/>
+        <pathelement location="${lib.path}/unsigned/cache.jar"/>
+        <pathelement location="${lib.path}/unsigned/vecmath_unsigned.jar"/>
+        <pathelement location="${lib.path}/unsigned/ISFServerCommons_unsigned.jar"/>
+        <pathelement location="${lib.path}/jai_imageio_unsigned.jar"/>
+        <pathelement location="${lib.path}/unsigned/ISFCommons_unsigned.jar"/>
+       
+    </path>
+    
+    <path id="servercommons.module.classpath">
+        <path refid="java.classpath"/>
+        <path refid="project.server"/>
+
+        <pathelement location="${lib.path}/unsigned/ISFCommons_unsigned.jar"/>
+        <pathelement location="${lib.path}/log4j_unsigned.jar"/>
+        <pathelement location="${lib.path}/ojdbc8.jar"/>
+        <pathelement location="${lib.path}/com.bea.core.datasource6.jar"/>
+        <pathelement location="${lib.path}/com.bea.core.utils.wrapper.jar"/>
+         <pathelement location="${lib.path}/api.jar"/>
+        
+      <!--  <pathelement location="${lib.path}/logging_unsigned.jar"/> -->
+    </path>
+ 
+    <path id="commons.module.classpath">
+        <path refid="java.classpath"/>
+        <path refid="project.server"/>
+        <pathelement location="${lib.path}/log4j_unsigned.jar"/>
+      <!--  <pathelement location="${lib.path}/logging_unsigned.jar"/> -->
+    </path>
+    
+    <path id="net.module.classpath">
+        <path refid="java.classpath"/>
+        <path refid="project.server"/>
+        <pathelement location="${lib.path}/log4j_unsigned.jar"/>
+        <pathelement location="${lib.path}/httpcodec13_unsigned.jar"/>
+        <pathelement location="${lib.path}/httpclient30_unsigned.jar"/>
+        <pathelement location="${lib.path}/logging_unsigned.jar"/> 
+        <pathelement location="${lib.path}/unsigned/PTMAPI_unsigned.jar"/>
+        <pathelement location="${lib.path}/unsigned/ISFCommons_unsigned.jar"/>
+    </path>
+
+    <target name="01clean-all-classes" description="Compiling All Java Sources">
+        <echo message="Deleting existing classes"/>
+        <echo message="Using JDK home as  ${java.jdk}"/>
+        <delete dir="build/classes"/>
+        <delete dir="build/viewer"/>
+        <delete dir="build/client"/>
+        <mkdir dir="build/classes/api"/>
+        <mkdir dir="build/classes/cache"/>
+        <mkdir dir="build/classes/viewer"/>
+        <mkdir dir="build/classes/client"/>
+        <mkdir dir="build/classes/webapp"/>
+        <mkdir dir="build/classes/commons"/>
+        <mkdir dir="build/classes/controls"/>
+        <mkdir dir="build/classes/net"/>
+        <mkdir dir="build/viewer"/>
+        <mkdir dir="build/client"/>
+        <mkdir dir="build/classes/servercommons"/>
+        <mkdir dir="build/classes/launcher-isf"/>
+        <mkdir dir="build/classes/launcher-viewer"/>
+        <mkdir dir="build/classes/filehandler"/>
+        <mkdir dir="build/classes/launcher-isf/lib"/>
+        <mkdir dir="build/classes/launcher-viewer/lib"/>
+        <mkdir dir="build/classes/webapp/WEB-INF"/>
+        <mkdir dir="build/classes/webapp/WEB-INF/classes"/>
+        <mkdir dir="build/classes/ejb"/>
+        <mkdir dir="build/classes/vecmath"/>
+        <delete dir="${lib.path}/unsigned"/>
+        <delete dir="${lib.path}/signed"/>
+        <delete dir="${lib.path}/websigned"/>
+        <mkdir dir="${lib.path}/unsigned"/>
+        <mkdir dir="${lib.path}/unsigned/obfuscated"/>
+        <mkdir dir="${lib.path}/signed"/>
+        <mkdir dir="${lib.path}/websigned"/>
+        <delete dir="${project.basedir}/${targetPath}"/>
+         <mkdir dir="${project.basedir}/${targetPath}"/>
+         <mkdir dir="${project.basedir}/${targetPath}/web"/>
+         <mkdir dir="${project.basedir}/${targetPath}/launcher"/>
+         <mkdir dir="${project.basedir}/${targetPath}/launcher/isf"/>
+         <mkdir dir="${project.basedir}/${targetPath}/launcher/viewer"/>
+         <mkdir dir="${project.basedir}/${targetPath}/launcher/isf/lib"/>
+         <mkdir dir="${project.basedir}/${targetPath}/launcher/viewer/lib"/>
+    </target>
+
+    <target name="02compile-vecmath" description="compile vecmath"  depends="01clean-all-classes">
+        <javac destdir="${destination.vecmath}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memoryMaximumSize="${compiler.max.memory}" fork="true" executable="${java.jdk}/bin/javac">
+            <compilerarg line="${compiler.args}"/>
+            <bootclasspath refid="module.bootclasspath"/>
+            <src path="${project.basedir}/${src.vecmath}"/>
+        </javac>
+        <jar jarfile="${destination.vecmath}/vecmath_unsigned.jar">
+            <fileset dir="${destination.vecmath}">
+                <include name="javax/**/*.*"/>
+            </fileset>
+            <manifest>
+                <attribute name="Codebase" value="${serverUrl}:7060"/>
+                <attribute name="Permissions" value="all-permissions"/>
+                
+                <attribute name="Application-Library-Allowable-Codebase" value="${serverUrl}:7060 ${serverUrl}:7060/lib" />
+                
+                <attribute name="Application-Name" value="Inscriptifact  v10.0.0.5${ext}"/>
+				<attribute name="Caller-Allowable-Codebase" value="${serverUrl}"/>
+
+            </manifest>            
+        </jar>
+        <copy todir="${lib.path}/unsigned/">
+            <fileset dir="${destination.vecmath}">
+                <include name="vecmath_unsigned.jar"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="04compile-PTMAPI" description="compile PTMAPI" depends="03compile-commons">
+        <javac destdir="${destination.api}" debug="${compiler.debug}" debuglevel="${compiler.debug.level}" nowarn="${compiler.generate.no.warnings}" memoryMaximumSize="${compiler.max.memory}" fork="true" executable="${java.jdk}/bin/javac">
+            <compilerarg line="${compiler.args}"/>
+            <bootclasspath refid="module.bootclasspath"/>
+            <classpath refid="ptm.module.classpath"/>
+            <src path="${project.basedir}/${src.api}"/>
+        </javac>
+        <jar jarfile="${destination.api}/PTMAPI_unsigned.jar">
+            <fileset dir="${destination.api}">
+                <include name="isf/**/*.*"/>
+            </fileset>
+            <manifest>
+                <attribute name="Codebase" value="${serverUrl}:7060"/>
+                <attribute name="Permissions" value="all-permissions"/>
+                <attribute name="Application-Library-Allowable-Codebase" value="${serverUrl}:7060 ${serverUrl}:7060/lib" />
+                <attribute name="Class-Path" value="vecmath.jar ISFCommons.jar log4j.jar" />
+                <attribute name="Application-Name" value="Inscriptifact  v10.0.0.5${ext}"/>
+		<attribute name="Caller-Allowable-Codebase" value="${serverUrl}"/>
+               
+            </manifest>            
+        </jar>
+        <copy todir="${lib.path}/unsigned/">
+            <fileset dir="${destination.api}">
+                <include name="PTMAPI_unsigned.jar"/>
+            </fileset>
+        </copy>
+        <copy todir="${dest.view.all}">
+            <fileset dir="${destination.api}">
+                <include name="isf/**/*.*"/>
+            </fileset>
+        </copy>
+        <copy todir="${dest.client.all}">
+            <fileset dir="${destination.api}">
+                <include name="isf/**/*.*"/>
+            </fileset>
+        </copy>
+    </target>
+    
+    <target name="03compile-commons" description="compile commons" depends="02compile-vecmath">
+        <javac destdir="${destination.commons}" debug="${compiler.debug}" debuglevel="${compiler.debug.level}" nowarn="${compiler.generate.no.warnings}" memoryMaximumSize="${compiler.max.memory}" fork="true" executable="${java.jdk}/bin/javac">
+            <compilerarg line="${compiler.args}"/>
+            <bootclasspath refid="module.bootclasspath"/>
+            <classpath refid="commons.module.classpath"/>
+            <src path="${project.basedir}/${src.commons}"/>
+        </javac>
+        <delete file="${destination.commons}/isf/common/utils/InscriptIni.ini"/>
+        <copy tofile="${destination.commons}/isf/common/utils/InscriptIni.ini">
+            <fileset file="${project.basedir}/${confPath}/InscriptIni.ini">
+            </fileset>
+        </copy>
+        <propertyfile  file="${destination.commons}/isf/common/utils/InscriptIni.ini"    >
+            <entry  key="version" value="10.0.0.5${ext}-Build-${bnumber}"/>
+        </propertyfile>
+        <copy tofile="${destination.commons}/isf/common/utils/log4j.ini">
+            <fileset file="${project.basedir}/${confPath}/log4j-c.txt">
+            </fileset>
+        </copy>
+        <delete file="${destination.commons}/isf/common/utils/InscriptViewer.ini"/>
+        <copy todir="${destination.commons}/isf/common/utils">
+            <fileset file="${project.basedir}/${confPath}/InscriptViewer.ini">
+            </fileset>
+        </copy>
+        <propertyfile  file="${destination.commons}/isf/common/utils/InscriptViewer.ini"    >
+            <entry  key="version" value="10.0.0.5${ext}-Build-${bnumber}"/>
+        </propertyfile>
+        <delete file="${dest.view.all}/isf/common/utils/InscriptViewer.ini"/>
+        <copy todir="${dest.view.all}/isf/common/utils">
+            <fileset file="${project.basedir}/${confPath}/InscriptViewer.ini">
+            </fileset>
+        </copy>
+        <propertyfile  file="${dest.view.all}/isf/common/utils/InscriptViewer.ini"    >
+            <entry  key="version" value="10.0.0.5${ext}-Build-${bnumber}"/>
+        </propertyfile>
+        <copy file="${project.basedir}/${confPath}/log4j-v.txt" tofile="${dest.view.all}/isf/common/utils/log4j.ini"/>
+       <delete file="${dest.client.all}/isf/common/utils/InscriptIni.ini"/>
+        <copy tofile="${dest.client.all}/isf/common/utils/InscriptIni.ini">
+            <fileset file="${project.basedir}/${confPath}/InscriptIni.ini">
+            </fileset>
+        </copy>
+        <propertyfile  file="${dest.client.all}/isf/common/utils/InscriptIni.ini"    >
+            <entry  key="version" value="10.0.0.5${ext}-Build-${bnumber}"/>
+        </propertyfile>
+        <copy tofile="${dest.client.all}/isf/common/utils/log4j.ini">
+            <fileset file="${project.basedir}/${confPath}/log4j-c.txt">
+            </fileset>
+        </copy>
+
+        
+        <jar jarfile="${destination.commons}/ISFCommons_unsigned.jar">
+            <fileset dir="${destination.commons}">
+                <include name="isf/**/*.*"/>
+            </fileset>
+            <manifest>
+                <attribute name="Codebase" value="${serverUrl}:7060"/>
+                <attribute name="Permissions" value="all-permissions"/>
+                
+                <attribute name="Application-Library-Allowable-Codebase" value="${serverUrl}:7060 ${serverUrl}:7060/lib" />
+                <attribute name="Class-Path" value="log4j.jar" />
+                
+                <attribute name="Application-Name" value="Inscriptifact  v10.0.0.5${ext}"/>
+		<attribute name="Caller-Allowable-Codebase" value="${serverUrl}"/>
+              
+            </manifest>            
+        </jar>
+        <copy todir="${lib.path}/unsigned/">
+            <fileset dir="${destination.commons}">
+                <include name="ISFCommons_unsigned.jar"/>
+            </fileset>
+        </copy>
+        <copy todir="${dest.view.all}">
+            <fileset dir="${destination.commons}">
+                <include name="isf/**/*.*"/>
+            </fileset>
+        </copy>
+        <copy todir="${dest.client.all}">
+            <fileset dir="${destination.commons}">
+                <include name="isf/**/*.*"/>
+            </fileset>
+        </copy>
+    </target>
+    
+    <target name="05compile-cache" description="compile cache" depends="04compile-PTMAPI">
+        <javac destdir="${destination.cache}" debug="${compiler.debug}" debuglevel="${compiler.debug.level}" nowarn="${compiler.generate.no.warnings}" memoryMaximumSize="${compiler.max.memory}" fork="true" executable="${java.jdk}/bin/javac">
+            <compilerarg line="${compiler.args}"/>
+            <bootclasspath refid="module.bootclasspath"/>
+            <classpath refid="cache.module.classpath"/>
+            <src path="${project.basedir}/${src.cache}"/>
+        </javac>
+        <jar jarfile="${destination.cache}/cache.jar">
+            <fileset dir="${destination.cache}">
+                <include name="isf/**/*.*"/>
+            </fileset>
+            <manifest>
+                <attribute name="Codebase" value="${serverUrl}:7060"/>
+                <attribute name="Permissions" value="all-permissions"/>
+               
+                <attribute name="Application-Library-Allowable-Codebase" value="${serverUrl}:7060 ${serverUrl}:7060/lib" />
+                <attribute name="Class-Path" value="ISFCommons.jar PTMAPI.jar log4j.jar" />
+                
+                <attribute name="Application-Name" value="Inscriptifact  v10.0.0.5${ext}"/>
+				<attribute name="Caller-Allowable-Codebase" value="${serverUrl}"/>
+
+            </manifest>
+        </jar>
+        <copy todir="${lib.path}/unsigned/">
+            <fileset dir="${destination.cache}">
+                <include name="cache.jar"/>
+            </fileset>
+        </copy>
+        <copy todir="${dest.view.all}">
+            <fileset dir="${destination.cache}">
+                <include name="isf/**/*.*"/>
+            </fileset>
+        </copy>
+        <copy todir="${dest.client.all}">
+            <fileset dir="${destination.cache}">
+                <include name="isf/**/*.*"/>
+            </fileset>
+        </copy>        
+    </target>
+    
+    
+    <target name="06compile-controls" description="compile controls" depends="05compile-cache">
+        <javac destdir="${destination.controls}" debug="${compiler.debug}" debuglevel="${compiler.debug.level}" nowarn="${compiler.generate.no.warnings}" memoryMaximumSize="${compiler.max.memory}" fork="true" executable="${java.jdk}/bin/javac">
+            <compilerarg line="${compiler.args}"/>
+            <bootclasspath refid="module.bootclasspath"/>
+            <classpath refid="isfcontrols.module.classpath"/>
+            <src path="${project.basedir}/${src.controls}"/>
+        </javac>
+
+        <jar jarfile="${destination.controls}/ISFControls_unsigned.jar">
+            <fileset dir="${destination.controls}">
+                <include name="isf/**/*.*"/>
+            </fileset>
+            <manifest>
+                <attribute name="Codebase" value="${serverUrl}:7060"/>
+                <attribute name="Permissions" value="all-permissions"/>
+                
+                <attribute name="Application-Library-Allowable-Codebase" value="${serverUrl}:7060 ${serverUrl}:7060/lib" />
+                <attribute name="Class-Path" value="ISFCommons.jar PTMAPI.jar ISFCache.jar httpclient30.jar httpcodec13.jar jai_imageio.jar log4j.jar  vecmath.jar" />
+                
+                <attribute name="Application-Name" value="Inscriptifact  v10.0.0.5${ext}"/>
+				<attribute name="Caller-Allowable-Codebase" value="${serverUrl}"/>
+
+            </manifest>            
+        </jar>
+        <copy todir="${lib.path}/unsigned/">
+            <fileset dir="${destination.controls}">
+                <include name="ISFControls_unsigned.jar"/>
+            </fileset>
+        </copy>
+                <copy todir="${dest.view.all}">
+            <fileset dir="${destination.controls}">
+                <include name="isf/**/*.*"/>
+            </fileset>
+        </copy>
+        <copy todir="${dest.client.all}">
+            <fileset dir="${destination.controls}">
+                <include name="isf/**/*.*"/>
+            </fileset>
+        </copy>
+    </target>
+    
+    
+    <target name="07compile-viewer" description="compile viewer" depends="06compile-controls">
+        <javac destdir="${destination.viewer}" debug="${compiler.debug}" debuglevel="${compiler.debug.level}" nowarn="${compiler.generate.no.warnings}" memoryMaximumSize="${compiler.max.memory}" fork="true" executable="${java.jdk}/bin/javac">
+            <compilerarg line="${compiler.args}"/>
+            <bootclasspath refid="module.bootclasspath"/>
+            <classpath refid="isfviewer.module.classpath"/>
+            <src path="${project.basedir}/${src.viewer}"/>
+        </javac>
+                <copy todir="${dest.view.all}">
+            <fileset dir="${destination.viewer}">
+                <include name="isf/**/*.*"/>
+            </fileset>
+        </copy>
+        <copy todir="${dest.client.all}">
+            <fileset dir="${destination.viewer}">
+                <include name="isf/**/*.*"/>
+            </fileset>
+        </copy>
+
+        <jar jarfile="${destination.viewer}/viewer.jar">
+            <fileset dir="${destination.viewer}">
+                <include name="isf/**/*.*"/>
+            </fileset>
+            <manifest>
+                <attribute name="Main-Class" value="isf.viewer.containers.ISFDesktopFrame"/>
+                <attribute name="Codebase" value="${serverUrl}:7060"/>
+                <attribute name="Permissions" value="all-permissions"/>
+                <attribute name="Application-Library-Allowable-Codebase" value="${serverUrl}:7060 ${serverUrl}:7060/lib" />
+                <attribute name="Class-Path" value="httpclient30.jar httpcodec13.jar ISFCache.jar  ISFCommons.jar ISFControls.jar ISFImages.jar jai_imageio.jar log4j.jar  PTMAPI.jar vecmath.jar" />
+                <attribute name="Application-Name" value="Inscriptifact  v10.0.0.5${ext}"/>
+		<attribute name="Caller-Allowable-Codebase" value="${serverUrl}"/>
+            </manifest>
+        </jar>
+        <jar jarfile="${dest.view.all}/viewer_all.jar">
+            <fileset dir="${dest.view.all}">
+                <include name="isf/**/*.*"/>
+                <include name="log4j.ini" />
+            </fileset>
+            <manifest>
+                <attribute name="Main-Class" value="isf.viewer.containers.ISFDesktopFrame"/>
+                <attribute name="Codebase" value="${serverUrl}:7060"/>
+                <attribute name="Permissions" value="all-permissions"/>
+                <attribute name="Application-Library-Allowable-Codebase" value="${serverUrl}:7060 ${serverUrl}:7060/lib" />
+                <attribute name="Class-Path" value="httpclient30.jar httpcodec13.jar ISFImages.jar jai_imageio.jar log4j.jar  vecmath.jar" />
+                <attribute name="Application-Name" value="Inscriptifact  v10.0.0.5${ext}"/>
+		<attribute name="Caller-Allowable-Codebase" value="${serverUrl}"/>
+            </manifest>
+        </jar>
+        <copy todir="${lib.path}/unsigned/">
+            <fileset dir="${destination.viewer}">
+                <include name="viewer.jar"/>
+            </fileset>
+        </copy>
+        <copy todir="${lib.path}/unsigned/">
+            <fileset dir="${dest.view.all}">
+                <include name="viewer_all.jar"/>
+            </fileset>
+        </copy>
+    </target>
+    
+    <target name="08compile-net" description="compile net connect" depends="07compile-viewer">
+        <javac destdir="${destination.net}" debug="${compiler.debug}" debuglevel="${compiler.debug.level}" nowarn="${compiler.generate.no.warnings}" memoryMaximumSize="${compiler.max.memory}" fork="true" executable="${java.jdk}/bin/javac">
+            <compilerarg line="${compiler.args}"/>
+            <bootclasspath refid="module.bootclasspath"/>
+            <classpath refid="net.module.classpath"/>
+            <src path="${project.basedir}/${src.net}"/>
+        </javac>
+             
+        <copy todir="${dest.client.all}">
+            <fileset dir="${destination.net}">
+                <include name="isf/**/*.*"/>
+            </fileset>
+        </copy>
+       
+        <jar jarfile="${destination.net}/ISFNetConnect_unsigned.jar">
+            <fileset dir="${destination.net}">
+                <include name="isf/**/*.*"/>
+            </fileset>
+            <manifest>
+                <attribute name="Codebase" value="${serverUrl}:7060"/>
+                <attribute name="Permissions" value="all-permissions"/>
+                <attribute name="Application-Library-Allowable-Codebase" value="${serverUrl}:7060 ${serverUrl}:7060/lib" />
+                <attribute name="Class-Path" value="httpclient30.jar httpcodec13.jar ISFCommons.jar log4j.jar  PTMAPI.jar logging.jar" />
+                <attribute name="Application-Name" value="Inscriptifact  v10.0.0.5${ext}"/>
+		<attribute name="Caller-Allowable-Codebase" value="${serverUrl}"/>
+            </manifest>
+        </jar>
+       
+        <copy todir="${lib.path}/unsigned/">
+            <fileset dir="${destination.net}">
+                <include name="ISFNetConnect_unsigned.jar"/>
+            </fileset>
+        </copy>
+        
+    </target>
+    
+
+    <target name="09compile-ISFClient" description="compile  ISFClient" depends="08compile-net">    <!-- depends="compile-PTMAPI"-->
+        <javac destdir="${destination.client}" debug="${compiler.debug}" debuglevel="${compiler.debug.level}" nowarn="${compiler.generate.no.warnings}" memoryMaximumSize="${compiler.max.memory}" fork="true" executable="${java.jdk}/bin/javac">
+            <compilerarg line="${compiler.args}"/>
+            <bootclasspath refid="module.bootclasspath"/>
+            <classpath refid="isfclient.module.classpath"/>
+            <src path="${project.basedir}/${src.client}"/>
+        </javac>
+
+         <copy todir="${dest.client.all}">
+            <fileset dir="${destination.client}">
+                <include name="com/isf/**/*.*"/>
+            </fileset>
+        </copy>
+       <!-- <copy tofile="${dest.client.all}/log4j.txt">
+            <fileset file="${project.basedir}/${confPath}/log4j-c.txt">
+            </fileset>
+        </copy> -->
+        <jar jarfile="${destination.client}/client.jar">
+            <fileset dir="${destination.client}">
+                <include name="com/**/*.*"/>
+                <include name="log4j.ini"/>
+            </fileset>
+            <manifest>
+                <attribute name="Main-Class" value="com.isf.app.view.containers.InscriptUI"/>
+                <attribute name="Codebase" value="${serverUrl}:7060"/>
+                <attribute name="Permissions" value="all-permissions"/>
+                <attribute name="Application-Library-Allowable-Codebase" value="${serverUrl}:7060 ${serverUrl}:7060/lib" />
+                <attribute name="Class-Path" value="ISFCommons.jar ISFControls.jar ISFImages.jar PTMAPI.jar ISFCache.jar httpclient30.jar httpcodec13.jar jai_imageio.jar log4j.jar   vecmath.jar ISFNetConnect.jar ISFViewer.jar" />
+                <attribute name="Application-Name" value="Inscriptifact  v10.0.0.5${ext}"/>
+		<attribute name="Caller-Allowable-Codebase" value="${serverUrl}"/>
+            </manifest>
+        </jar>
+        <jar jarfile="${dest.client.all}/client_all.jar">
+            <fileset dir="${dest.client.all}">
+                <include name="com/**/*.*"/>
+		<include name="isf/**/*.*"/>
+                <include name="log4j.ini"/>
+            </fileset>
+            <manifest>
+                <attribute name="Main-Class" value="com.isf.app.view.containers.InscriptUI"/>
+                <attribute name="Codebase" value="${serverUrl}:7060"/>
+                <attribute name="Permissions" value="all-permissions"/>
+                <attribute name="Application-Library-Allowable-Codebase" value="${serverUrl}:7060 ${serverUrl}:7060/lib" />
+                <attribute name="Class-Path" value="ISFImages.jar httpclient30.jar httpcodec13.jar jai_imageio.jar log4j.jar logging.jar  vecmath.jar" />
+                <attribute name="Application-Name" value="Inscriptifact  v10.0.0.5${ext}"/>
+		<attribute name="Caller-Allowable-Codebase" value="${serverUrl}"/>
+            </manifest>
+        </jar>
+        <copy todir="${lib.path}/unsigned/">
+            <fileset dir="${destination.client}">
+                <include name="client.jar"/>
+            </fileset>
+        </copy>
+        <copy todir="${lib.path}/unsigned/">
+            <fileset dir="${dest.client.all}">
+                <include name="client_all.jar"/>
+            </fileset>
+        </copy>
+    </target>
+    
+    <target name="setRuth" depends="init">
+        <property name="targetPath" value="build/deploy/ruth"/>
+        <property name="confPath" value="build/conf/ruth"/>
+        <property name="oldversions" value="build/resources/versions/ruth"/>
+        <property name="serverUrl" value="ruth.usc.edu"/>
+        <property name="conf" value="ruth" />
+        <property name="ext" value="R"/>
+        <propertyfile    file="build.number">
+        <entry  key="${conf}.build" type="int" default="0" operation="+"/>
+        </propertyfile>
+        <property file="build.number" />
+        <property name="bnumber" value = "${ruth.build}" />        
+    </target>
+    
+    <target name="setLocal" depends="init">
+        <property name="targetPath" value="build/deploy/localhost"/>
+        <property name="confPath" value="build/conf/localhost"/>
+        <property name="oldversions" value="build/resources/versions/localhost"/>
+        <property name="serverUrl" value="localhost"/>
+        <property name="conf" value="localhost" />
+        <property name="ext" value="LL"/>
+        <propertyfile    file="build.number">
+        <entry  key="${conf}.build" type="int" default="0" operation="+"/>
+        </propertyfile>
+        <property file="build.number" />
+        <property name="bnumber" value = "${localhost.build}" />        
+    </target>
+    
+    <target name="setLannea" depends="init">
+        <property name="targetPath" value="build/deploy/Lannea"/>
+        <property name="confPath" value="build/conf/Lannea"/>
+        <property name="oldversions" value="build/resources/versions/Lannea"/>
+        <property name="serverUrl" value="lannea.usc.edu"/>
+        <property name="conf" value="lannea" />
+        <property name="ext" value="L"/>
+        <propertyfile    file="build.number">
+        <entry  key="${conf}.build" type="int" default="0" operation="+"/>
+        </propertyfile>
+        <property file="build.number" />
+        <property name="bnumber" value = "${lannea.build}" />
+       </target>
+
+
+
+
+    <target name="11compile-webapp" description="compiles webapp" depends="10compile-servercommons">
+        <mkdir dir="${destination.webapp}/WEB-INF"/>
+        <mkdir dir="${destination.webapp}/WEB-INF/classes"/>
+        <javac destdir="${destination.webapp}/WEB-INF/classes" debug="${compiler.debug.web}"  nowarn="${compiler.generate.no.warnings}" memoryMaximumSize="${compiler.max.memory}" fork="true" executable="${java.jdk}/bin/javac">
+            <compilerarg line="${compiler.args}"/>
+            <bootclasspath refid="module.bootclasspath"/>
+            <classpath refid="webapp.module.classpath"/>
+            <src path="${project.basedir}/${src.web}"/>
+        </javac>
+        <mkdir dir="${destination.webapp}/WEB-INF/classes/lib"/>
+        <copy todir="${destination.webapp}/WEB-INF/classes/lib">
+            <fileset dir="${project.basedir}/libraries/jwsrelated">
+                <include name="*.jar"/>
+            </fileset>
+        </copy>
+        <mkdir dir="${destination.webapp}/lib"/>
+        <mkdir dir="${destination.webapp}/images"/>
+        <mkdir dir="${destination.webapp}/css"/>
+        <copy todir="${destination.webapp}/images">
+            <fileset dir="${resources.web}/${conf}/images">
+                <include name="*.*"/>
+            </fileset>
+        </copy>
+        <copy todir="${destination.webapp}">
+            <fileset dir="${resources.web}/${conf}">
+                <include name="*.html"/>
+                <include name="*.dtd"/>
+                <include name="*.jsp"/>
+
+            </fileset>
+        </copy>
+        <copy todir="${destination.webapp}/css">
+            <fileset dir="${resources.web}/${conf}/css">
+                <include name="*.css"/>
+            </fileset>
+        </copy>
+        <copy todir="${destination.webapp}/WEB-INF">
+            <fileset dir="${resources.web}/${conf}">
+                <include name="*.xml"/>
+            </fileset>
+        </copy>
+    </target>
+        
+    <target name="10compile-servercommons" description="compile server commons" depends="09compile-ISFClient">
+        <javac destdir="${destination.servercommons}" debug="${compiler.debug}" debuglevel="${compiler.debug.level}" nowarn="${compiler.generate.no.warnings}" memoryMaximumSize="${compiler.max.memory}" fork="true" executable="${java.jdk}/bin/javac">
+            <compilerarg line="${compiler.args}"/>
+            <bootclasspath refid="module.bootclasspath"/>
+            <classpath refid="servercommons.module.classpath"/>
+            <src path="${project.basedir}/${src.servercommons}"/>
+        </javac>
+        <copy todir="${project.basedir}/${destination.servercommons}/isf/sc/utils">
+            <fileset file="${project.basedir}/${confPath}/InscriptEjb.ini">
+            </fileset>
+            <fileset file="${project.basedir}/${confPath}/forgotpassword.ini">
+            </fileset>
+        </copy>
+        <jar jarfile="${destination.servercommons}/ISFServerCommons_unsigned.jar">
+            <fileset dir="${destination.servercommons}">
+                <include name="isf/**/*.*"/>
+            </fileset>
+        </jar>
+        <copy todir="${lib.path}/unsigned/">
+            <fileset dir="${destination.servercommons}">
+                <include name="ISFServerCommons_unsigned.jar"/>
+            </fileset>
+        </copy>
+     
+    </target>
+
+
+    <target name="Ruth" depends="setRuth,18build-launcherviewer"/>
+    <target name="Local" depends="setLocal,18build-launcherviewer"/>
+    <target name="Lannea" depends="setLannea,18build-launcherviewer"/>
+    <!--  <tstamp>
+            <format property="touch.time" pattern="MM/dd/yyyy hh:mm aa" />
+      </tstamp> -->
+
+    <target name="15build-ISF" depends="14deploy-webapp">
+       
+        <mkdir dir="${project.basedir}/${targetPath}/web/META-INF"/>
+        <copy file="${project.basedir}/build/resources/app/application.xml" todir="${project.basedir}/${targetPath}/web//META-INF"/>
+        <copy file="${project.basedir}/build/resources/app/weblogic-application.xml" todir="${project.basedir}/${targetPath}/web/META-INF"/>
+        <jar jarfile="${project.basedir}/${targetPath}/web/Inscriptifact.ear">
+            <fileset dir="${project.basedir}/${targetPath}/web">
+                <include name="*.jar"/>
+                <include name="*.war"/>
+                <include name="META-INF/**/*.*"/>
+            </fileset>
+        </jar>
+          
+        <echoxml file="${project.basedir}/${targetPath}/version.xml" append="false">
+            <application>
+                <version>${project.version}${ext}</version>
+                <build>${bnumber}</build>
+                <IsfFiles>ISFAPP.jar</IsfFiles>
+                <ViewerFiles>ISFVIEWER.jar</ViewerFiles>
+            </application>
+        </echoxml>
+
+    </target>
+    
+    <target name="16build-launcherisf" depends="15build-ISF">
+        <delete file="${project.basedir}/${targetPath}/launcher/isf/version.xml"/>
+       
+        <mkdir dir="${destination.launcherisf}/images" />
+        <javac destdir="${destination.launcherisf}" debug="${compiler.debug.web}"  nowarn="${compiler.generate.no.warnings}" memoryMaximumSize="${compiler.max.memory}" fork="true" executable="${java.jdk}/bin/javac">
+            <compilerarg line="${compiler.args}"/>
+            <bootclasspath refid="launcher.bootclasspath"/>
+            <src path="${project.basedir}/${src.launcherisf}"/>
+        </javac>
+        <copy todir="${destination.launcherisf}/images">
+            <fileset file="${project.basedir}/${src.launcherisf}/images/*.jpg">
+            </fileset>
+        </copy>
+        <jar jarfile="${destination.launcherisf}/launcher_unsigned.jar">
+            <fileset dir="${destination.launcherisf}">
+                <include name="**/**/*.*"/>
+                 <include name="images/*.*"/>
+            </fileset>
+            <manifest>
+                <attribute name="Main-Class" value="isf.install.loader.Launcher"/>
+                <attribute name="Permissions" value="all-permissions"/>
+                <attribute name="Application-Name" value="Inscriptifact  v10.0.0.5${ext}"/>
+                 <attribute name="Class-Path" value="lib/log4j.jar" />
+            </manifest>            
+        </jar>
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" jar="${destination.launcherisf}/launcher_unsigned.jar" signedjar="${destination.launcherisf}/ISFLauncher.jar" storepass="${storepass}" keypass="${keypass}"/>
+        <copy todir="${project.basedir}/${targetPath}/launcher/isf">
+            <fileset file="${destination.launcherisf}/ISFLauncher.jar">
+            </fileset>
+        </copy>
+         <copy todir="${project.basedir}/${targetPath}/launcher/isf/lib">
+            <fileset file="${src.launcherisf}/../lib/log.ini">
+            </fileset>
+        </copy>
+
+        <echoxml file="${project.basedir}/${targetPath}/launcher/isf/version.xml"> 
+            <application>
+                <name>Isf</name>
+                <version>${project.version}${ext}</version>
+                <build>${bnumber}</build>
+                <installdir></installdir>
+                <javahome></javahome>
+                <maxheap>1300m</maxheap>
+                <minheap>768m</minheap>
+                <host>${serverUrl}</host>
+            </application>
+        </echoxml>
+
+        <copy todir="${project.basedir}/${targetPath}/launcher/isf/lib">
+		    <fileset dir="${lib.path}/signed">
+                <include name="jai_imageio.jar"/>
+                <include name="vecmath.jar"/>
+                <include name="log4j.jar"/>
+                <include name="logging.jar"/> 
+                <include name="httpcodec13.jar"/>
+                <include name="httpclient30.jar"/>
+                <include name="ISFImages.jar"/>
+                <include name="ISFAPP.jar"/>
+            </fileset>
+		
+
+        </copy>
+    </target>
+     <target name="17build-filehandler" depends="16build-launcherisf">
+      <!-- <javac destdir="${destination.filehandler}" debug="${compiler.debug.web}"  nowarn="${compiler.generate.no.warnings}" memoryMaximumSize="${compiler.max.memory}" fork="true" executable="${java.jdk}/bin/javac">
+            <compilerarg line="${compiler.args}"/>
+            <bootclasspath refid="filehandler.bootclasspath"/>
+            <src path="${project.basedir}/${src.filehandler}"/>
+        </javac> 
+        <jar jarfile="${destination.filehandler}/filehandler_unsigned.jar">
+            <fileset dir="${destination.filehandler}">
+                <include name="**/**/*.*"/>
+            </fileset>
+        </jar>-->
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" jar="${src.filehandler}/filehandler_unsigned.jar" signedjar="${project.basedir}/${targetPath}/launcher/viewer/FileHandler.jar" storepass="${storepass}" keypass="${keypass}"/>
+    </target> 
+     <target name="18build-launcherviewer" depends="17build-filehandler">
+        <delete file="${project.basedir}/${targetPath}/launcher/viewer/version.xml"/>
+        
+        <mkdir dir="${destination.launcherviewer}/images" />
+        <javac destdir="${destination.launcherviewer}" debug="${compiler.debug.web}"  nowarn="${compiler.generate.no.warnings}" memoryMaximumSize="${compiler.max.memory}" fork="true" executable="${java.jdk}/bin/javac">
+            <compilerarg line="${compiler.args}"/>
+            <bootclasspath refid="launcher.bootclasspath"/>
+            <src path="${project.basedir}/${src.launcherviewer}"/>
+        </javac>
+        <copy todir="${destination.launcherviewer}/images">
+            <fileset file="${project.basedir}/${src.launcherviewer}/images/*.jpg">
+            </fileset>
+        </copy>
+        <jar jarfile="${destination.launcherviewer}/launcher_unsigned.jar">
+            <fileset dir="${destination.launcherviewer}">
+                <include name="**/**/*.*"/>
+                <include name="images/*.*"/>
+            </fileset>
+            <manifest>
+               <attribute name="Main-Class" value="isf.install.loader.Launcher"/>
+                <attribute name="Permissions" value="all-permissions"/>
+                <attribute name="Application-Name" value="Inscriptifact  v10.0.0.5${ext}"/>
+                 <attribute name="Class-Path" value="lib/log4j.jar FileHandler.jar" />
+            </manifest>            
+        </jar>
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" jar="${destination.launcherviewer}/launcher_unsigned.jar" signedjar="${destination.launcherviewer}/ISFLauncher.jar" storepass="${storepass}" keypass="${keypass}"/>
+        <copy todir="${project.basedir}/${targetPath}/launcher/viewer">
+            <fileset file="${destination.launcherviewer}/ISFLauncher.jar">
+            </fileset>
+        </copy>
+
+        <copy todir="${project.basedir}/${targetPath}/launcher/viewer/lib">
+            <fileset file="${src.launcherviewer}/../lib/log.ini">
+            </fileset>
+        </copy>
+
+        <echoxml file="${project.basedir}/${targetPath}/launcher/viewer/version.xml"> 
+            <application>
+                <name>Viewer</name>
+                <version>${project.version}${ext}</version>
+                <build>${bnumber}</build>
+                <installdir></installdir>
+                <port>1725</port>
+                <javahome></javahome>
+                <maxheap>1300m</maxheap>
+                <minheap>768m</minheap>
+                <host>${serverUrl}</host>
+            </application>
+        </echoxml>
+         <copy todir="${project.basedir}/${targetPath}/launcher/viewer/lib">
+            <fileset dir="${lib.path}/signed">
+                <include name="jai_imageio.jar"/>
+                <include name="vecmath.jar"/>
+                <include name="log4j.jar"/>
+                <include name="ISFImages.jar"/>
+                <include name="ISFVIEWER.jar"/>
+            </fileset>
+        </copy>
+
+    </target>
+    
+ 
+    <target name="14deploy-webapp" depends="13deploy-viewer">
+         
+        <copy tofile="${destination.webapp}/WEB-INF/classes/log4j.ini">
+            <fileset file="${project.basedir}/${confPath}/log4j-w.txt">
+            </fileset>
+        </copy>
+        <copy todir="${destination.webapp}/WEB-INF/classes/com/isf/webutils">
+            <fileset file="${project.basedir}/${confPath}/InscriptWebApp.ini">
+            </fileset>
+        </copy>
+        <copy todir="build/classes/webapp" overwrite="true">
+            <fileset dir="${project.basedir}/${confPath}">
+                <include name="*.jnlp"/>
+                <include name="*.html"/>
+                <include name="*.jsp"/>
+            </fileset>
+        </copy>
+        <mkdir dir="${project.basedir}/build/classes/webapp/lib/archive"/>
+        <copy todir="build/classes/webapp/lib/archive" overwrite="true">
+            <fileset dir="${project.basedir}/${oldversions}">
+                <include name="*.jar"/>
+            </fileset>
+        </copy>
+        <jar jarfile="${project.basedir}/build/classes/webapp/ISF_WebApp.war">
+            <fileset dir="${project.basedir}/build/classes/webapp">
+                <include name="*.*"/>
+                <include name="images/**/*.*"/>
+                <include name="lib/**/*.*"/>
+                <include name="WEB-INF/**/*.*"/>
+                <include name="css/**/*.*"/>
+
+            </fileset>
+            
+        </jar>
+        <copy todir="${project.basedir}/${targetPath}/web">
+            <fileset dir="${project.basedir}/build/classes/webapp">
+                <include name="ISF_WebApp.war"/>
+            </fileset>
+        </copy>
+    </target>
+   
+   
+
+    <target name="12obfuscate" depends="11compile-webapp">
+        <mkdir dir="${lib.path}/unsigned/obfuscated" />
+     <!--   <proguard configuration="${project.basedir}/build/obfuscation/1commons.pro" />
+        <copy file="${project.basedir}/build/obfuscation/config/commons.map" tofile="${project.basedir}/build/obfuscation/newmapping.map" />
+        <proguard configuration="${project.basedir}/build/obfuscation/2ptmapi.pro" />
+          <concat destfile="${project.basedir}/build/obfuscation/newmapping.map" append="true">
+                <filelist dir="${project.basedir}/build/obfuscation/config" files="ptmapi.map"/>
+          </concat>
+      <proguard configuration="${project.basedir}/build/obfuscation/3cache.pro" />
+               <concat destfile="${project.basedir}/build/obfuscation/newmapping.map" append="true">
+                <filelist dir="${project.basedir}/build/obfuscation/config" files="cache.map"/>
+          </concat>
+        <proguard configuration="${project.basedir}/build/obfuscation/4controls.pro" />
+
+       <concat destfile="${project.basedir}/build/obfuscation/newmapping.map" append="true">
+                <filelist dir="${project.basedir}/build/obfuscation/config" files="controls.map"/>
+          </concat>
+        <proguard configuration="${project.basedir}/build/obfuscation/5viewer.pro" />
+
+               <concat destfile="${project.basedir}/build/obfuscation/newmapping.map" append="true">
+                <filelist dir="${project.basedir}/build/obfuscation/config" files="viewer.map"/>
+          </concat>
+        <proguard configuration="${project.basedir}/build/obfuscation/6netconnect.pro" />
+
+           <concat destfile="${project.basedir}/build/obfuscation/newmapping.map" append="true">
+                <filelist dir="${project.basedir}/build/obfuscation/config" files="connect.map"/>
+          </concat>
+        
+        
+        <proguard configuration="${project.basedir}/build/obfuscation/7client.pro"  />
+               <concat destfile="${project.basedir}/build/obfuscation/newmapping.map" append="true">
+                <filelist dir="${project.basedir}/build/obfuscation/config" files="client.map"/>
+          </concat>
+                <delete file="${project.basedir}/build/obfuscation/mapping.map"/>
+                <copy file="${project.basedir}/build/obfuscation/newmapping.map" tofile="${project.basedir}/build/obfuscation/mapping.map" />
+                <delete file="${project.basedir}/build/obfuscation/newmapping.map"/>  -->
+
+       <proguard configuration="${project.basedir}/build/obfuscation/viewer_all_final.pro" /> 
+       <proguard configuration="${project.basedir}/build/obfuscation/client_all_final.pro" />    
+        
+        
+      <!--   <copy  file="${lib.path}/unsigned/PTMAPI_unsigned.jar" tofile="${lib.path}/unsigned/obfuscated/PTMAPI_obf.jar" />
+        <copy  file="${lib.path}/unsigned/cache.jar" tofile="${lib.path}/unsigned/obfuscated/cache_obf.jar" />
+        <copy  file="${lib.path}/unsigned/ISFCommons_unsigned.jar" tofile="${lib.path}/unsigned/obfuscated/commons_obf.jar" />
+        <copy  file="${lib.path}/unsigned/ISFControls_unsigned.jar" tofile="${lib.path}/unsigned/obfuscated/controls_obf.jar" />
+        <copy  file="${lib.path}/unsigned/viewer.jar" tofile="${lib.path}/unsigned/obfuscated/viewer_obf.jar" />
+        <copy  file="${lib.path}/unsigned/client.jar" tofile="${lib.path}/unsigned/obfuscated/client_obf.jar" /> 
+         
+        <copy  file="${lib.path}/unsigned/viewer_all.jar" tofile="${lib.path}/unsigned/obfuscated/viewer_all_obf.jar" />
+        <copy  file="${lib.path}/unsigned/client_all.jar" tofile="${lib.path}/unsigned/obfuscated/client_all_obf.jar" />   -->
+        </target>
+    <target name="13deploy-viewer" depends="12obfuscate">
+        
+
+     <!--   <signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/signed/ISF_Viewer.jar" jar="${lib.path}/unsigned/obfuscated/viewer_obf.jar" storepass="${storepass}" keypass="${keypass}"/>
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/signed/PTMAPI.jar" jar="${lib.path}/unsigned/obfuscated/ptmapi_obf.jar" storepass="${storepass}" />
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/signed/ISFCache.jar" jar="${lib.path}/unsigned/obfuscated/cache_obf.jar" storepass="${storepass}" />
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/signed/ISFClient.jar" jar="${lib.path}/unsigned/obfuscated/client_obf.jar" storepass="${storepass}" />  
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/signed/ISFCommons.jar" jar="${lib.path}/unsigned/obfuscated/commons_obf.jar" storepass="${storepass}" /> 
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/signed/ISFServerCommons.jar" jar="${lib.path}/unsigned/ISFServerCommons_unsigned.jar" storepass="${storepass}" />
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/signed/ISFControls.jar" jar="${lib.path}/unsigned/obfuscated/controls_obf.jar" storepass="${storepass}" />
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/signed/ISFNetConnect.jar" jar="${lib.path}/unsigned/obfuscated/netConnect_obf.jar" storepass="${storepass}" />
+        
+        -->
+       
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/signed/ISFImages.jar" jar="${project.basedir}/libraries/ISFImages_unsigned.jar" storepass="${storepass}" />
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/signed/jai_imageio.jar" jar="${project.basedir}/libraries/jai_imageio_unsigned.jar" storepass="${storepass}" />
+       
+        
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/signed/log4j.jar" jar="${project.basedir}/libraries/log4j_unsigned.jar" storepass="${storepass}" />
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/signed/logging.jar" jar="${project.basedir}/libraries/logging_unsigned.jar" storepass="${storepass}" /> 
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/signed/httpcodec13.jar" jar="${project.basedir}/libraries/httpcodec13_unsigned.jar" storepass="${storepass}" />
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/signed/httpclient30.jar" jar="${project.basedir}/libraries/httpclient30_unsigned.jar" storepass="${storepass}" />
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/signed/vecmath.jar" jar="${lib.path}/unsigned/vecmath_unsigned.jar" storepass="${storepass}" />
+        
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/websigned/PTMAPI.jar" jar="${lib.path}/unsigned/PTMAPI_unsigned.jar" storepass="${storepass}" />
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/websigned/ISFCache.jar" jar="${lib.path}/unsigned/cache.jar" storepass="${storepass}" />
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/websigned/ISFServerCommons.jar" jar="${lib.path}/unsigned/ISFServerCommons_unsigned.jar" storepass="${storepass}" />
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/websigned/ISFCommons.jar" jar="${lib.path}/unsigned/ISFCommons_unsigned.jar" storepass="${storepass}" />
+        <signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/signed/ISFVIEWER.jar" jar="${lib.path}/unsigned/obfuscated/viewer_all_obf.jar" storepass="${storepass}" />
+	<signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/signed/ISFAPP.jar" jar="${lib.path}/unsigned/obfuscated/client_all_obf.jar" storepass="${storepass}" />
+  
+        
+        <!--<signjar keystore="${kesystore.path}" alias="${keystore.alias}" signedjar="${lib.path}/signed/ISFCommons.jar" jar="${lib.path}/ISFCommons_unsigned.jar" storepass="${storepass}" /> -->
+
+        <copy todir="${project.basedir}/build/classes/webapp/lib">
+            <fileset dir="${lib.path}/signed">
+               <!-- <include name="ISFViewer.jar"/>
+                <include name="ISFCommons.jar"/>
+                <include name="ISFControls.jar"/>
+
+                <include name="ISFClient.jar"/>
+                 <include name="ISFClient142.jar"/> 
+                <include name="PTMAPI.jar"/>
+                <include name="ISFCache.jar"/>-->
+                <include name="jai_imageio.jar"/>
+                <include name="vecmath.jar"/>
+                <include name="log4j.jar"/>
+                <include name="logging.jar"/> 
+                <include name="httpcodec13.jar"/>
+                <include name="httpclient30.jar"/>
+                <!--<include name="ISFParsers.jar"/>-->
+                <include name="ISFImages.jar"/>
+                <include name="ISFVIEWER.jar"/>
+                <include name="ISFAPP.jar"/>
+
+
+            </fileset>
+        </copy>
+
+    </target>
+
+</project>

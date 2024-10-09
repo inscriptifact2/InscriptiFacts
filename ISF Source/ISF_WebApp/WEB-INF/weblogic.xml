@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE weblogic-web-app PUBLIC "-//BEA Systems, Inc.//DTD Web Application 6.0//EN" "http://www.bea.com/servers/wls600/dtd/weblogic-web-jar.dtd">
+<weblogic-web-app xmlns="http://www.bea.com/ns/weblogic/90">
+  <jsp-descriptor>
+    <jsp-param>
+      <param-name>
+           pageCheckSeconds
+            </param-name>
+      <param-value>
+           1
+            </param-value>
+    </jsp-param>
+    <jsp-param>
+      <param-name>
+           verbose
+            </param-name>
+      <param-value>
+           true
+            </param-value>
+    </jsp-param>
+    <jsp-param>
+      <param-name>debug</param-name>
+      <param-value>true</param-value>
+    </jsp-param>
+  </jsp-descriptor>
+  <context-root/>
+</weblogic-web-app>

@@ -1,0 +1,70 @@
+isf.cache.CacheItem -> l11lICCI.l11lICCI.l1IlIlTI1T1T:
+    java.lang.String name -> name
+    long lastAccessedTime -> TT1lIT1ll1ITIIl1
+    double size -> ITI1llTTI1lITl
+    java.lang.String getName() -> getName
+    void setName(java.lang.String) -> setName
+    long getLastAccessedTime() -> getLastAccessedTime
+    void setLastAccessedTime(long) -> TT1lIT1ll1ITIIl1
+    void setSize(double) -> TT1lIT1ll1ITIIl1
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+    double getSize() -> TT1lIT1ll1ITIIl1
+    void writeObject(java.io.ObjectOutputStream) -> TT1lIT1ll1ITIIl1
+    void readObject(java.io.ObjectInputStream) -> TT1lIT1ll1ITIIl1
+isf.cache.CacheItemComparator -> l11lICCI.l11lICCI.lI1lTIIlT1T1:
+    int compare(java.lang.Object,java.lang.Object) -> compare
+isf.cache.CacheMap -> l11lICCI.l11lICCI.Tl1l11IlIITT:
+    java.util.Comparator comparer -> l1IlTT1lITIl1IT1
+    java.lang.Object put(java.lang.Object,java.lang.Object) -> put
+    java.lang.Object remove(java.lang.Object) -> remove
+isf.cache.CacheSet -> l11lICCI.l11lICCI.Il1TI1lIT1lT:
+    boolean contains(java.lang.Object) -> contains
+    java.lang.Object get(java.lang.Object) -> get
+    boolean add(java.lang.Object) -> add
+isf.cache.LRUCache -> l11lICCI.l11lICCI.l11lIlTTI1TI:
+    org.apache.log4j.Logger log -> log
+    long serialVersionUID -> serialVersionUID
+    double fileSize -> lI1I1T1ITTl1llIT
+    java.util.SortedSet cache -> IlITlTTTl11Il1I
+    boolean isMonitoring -> IT11TT1lIll1ITIl
+    double cacheSize -> TIITI1lTlTl1Il11
+    void createSynchronizedMap(isf.cache.CacheSet) -> TT1lIT1ll1ITIIl1
+    void setLimit(java.lang.String) -> TT1lIT1ll1ITIIl1
+    void updateEntry(java.lang.String,double) -> TT1lIT1ll1ITIIl1
+    void deleteEntry(java.lang.String) -> deleteEntry
+    void updateEntry(java.lang.String) -> ITI1llTTI1lITl
+    void trimDirectory(java.lang.String) -> l1IlTT1lITIl1IT1
+    void addItem(isf.cache.CacheItem) -> TT1lIT1ll1ITIIl1
+    void startMonitor() -> ITI1llTTI1lITl
+    void stopMonitoring() -> l1IlTT1lITIl1IT1
+    boolean isCached(java.lang.String) -> lI1I1T1ITTl1llIT
+    void writeObject(java.io.ObjectOutputStream) -> TT1lIT1ll1ITIIl1
+    void readObject(java.io.ObjectInputStream) -> TT1lIT1ll1ITIIl1
+    java.lang.String dumpValues() -> lI1I1T1ITTl1llIT
+    double access$000(isf.cache.LRUCache) -> TT1lIT1ll1ITIIl1
+    java.util.SortedSet access$100(isf.cache.LRUCache) -> ITI1llTTI1lITl
+    double access$026(isf.cache.LRUCache,double) -> TT1lIT1ll1ITIIl1
+    void access$200(isf.cache.LRUCache,java.lang.String) -> TT1lIT1ll1ITIIl1
+    boolean access$302(isf.cache.LRUCache,boolean) -> TT1lIT1ll1ITIIl1
+isf.cache.LRUCache$1 -> l11lICCI.l11lICCI.T11ITIIllTl:
+    isf.cache.LRUCache this$0 -> TTl1TITI1l1Il1lI
+    void run() -> run
+isf.cache.utils.CacheHandler -> l11lICCI.l11lICCI.l11lICCI.l1IlIlTI1T1T:
+    isf.cache.utils.CacheHandler ourInstance -> IITTlT11lII1T1ll
+    isf.cache.LRUCache cache -> l1IllT11TIIT1ITl
+    isf.cache.utils.CacheHandler getInstance() -> IlITlTTTl11Il1I
+    void setCache(isf.cache.LRUCache) -> l1IlTT1lITIl1IT1
+    isf.cache.LRUCache getCache() -> IT11TT1lIll1ITIl
+isf.cache.utils.ImageUtils -> l11lICCI.l11lICCI.l11lICCI.lI1lTIIlT1T1:
+    isf.cache.LRUCache cache -> l1IllT11TIIT1ITl
+    java.lang.String path -> path
+    org.apache.log4j.Logger log -> log
+    java.awt.image.BufferedImage readUnbuffered(java.io.InputStream) -> TT1lIT1ll1ITIIl1
+    boolean isCached(java.lang.String) -> lI1I1T1ITTl1llIT
+    java.lang.String getCachedPath() -> TIITI1lTlTl1Il11
+    void cleanCache() -> TTl1TITI1l1Il1lI
+    void saveCache(java.lang.String,isf.ptm.formats.PTM,isf.common.utils.PTMConfig) -> TT1lIT1ll1ITIIl1
+    void saveThumbnail(java.lang.String,java.awt.image.BufferedImage) -> TT1lIT1ll1ITIIl1
+    java.awt.image.BufferedImage getThumbnail(java.lang.String) -> IlITlTTTl11Il1I

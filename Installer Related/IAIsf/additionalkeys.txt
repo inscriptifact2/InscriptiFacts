@@ -1,0 +1,21 @@
+<key>UTExportedTypeDeclarations</key>
+<array>
+    <dict>
+        <key>UTTypeIconFile</key>
+        <array>
+            <string>Document-rtf-64.png</string>
+            <string>Document-rtf-320.png</string>
+        </array>
+        <key>UTTypeDescription</key>
+        <string>RTF Document</string>
+        <key>UTTypeIdentifier</key>
+        <string>public.rtf</string>
+        <key>UTTypeTagSpecification</key>
+            <dict>
+                <key>public.filename-extension</key>
+                <array>
+                    <string>rtf</string>
+                </array>
+            </dict>
+    </dict>
+</array>

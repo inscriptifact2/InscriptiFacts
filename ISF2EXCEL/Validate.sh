@@ -1,0 +1,1 @@
+java -cp ISF2Excel.jar isf.work.ValidateTYransfer /var/local/inscripti-fact/complete/Batch3_PersepolisI

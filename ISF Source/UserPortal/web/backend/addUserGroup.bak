@@ -1,0 +1,37 @@
+<%-- 
+    Document   : addUserGroup
+    Created on : Jan 21, 2013, 5:09:14 PM
+    Author     : raok1
+--%>
+
+<%@page import="java.util.Calendar"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body vlink="#525D76" alink="#525D76" link="#525D76" text="#000000" bgcolor="#FFF4ED">
+                <table width="100%" border="0">
+            
+            <tr><td height="40">
+                    <h1 align="center"> InscriptiFact User Portal</h1></td></tr>
+            <tr><td>
+                     <form method="POST" action="usergroupbk.jsp">
+                        <table cellpadding="2" cellspacing="0" border="0" align="center" width="30%"><tr>
+            
+                 <tr><td>User Group Name:</td><td><input name="groupName" id="groupName" type ="text"/>
+                 </td></tr>
+                 <tr><td><input type="checkbox" selected>Create Group Admin? </input></td></tr>
+                 <tr><td><input type="submit" value="Create"/><input type="button" onclick="this.form.reset()" value="Reset" /></td></tr>
+              </table>
+                     </form>
+                </td></tr>
+            <tr><td colspan="2"><hr size="1" noshade></td></tr><!--PAGE FOOTER--><tr><td colspan="2"><div align="center"><font size="-1" color="#525D76"><em>
+                                Copyright &copy; 2001-<%=Calendar.getInstance().get(Calendar.YEAR)%>, University of Southern California.  All Rights Reserved
+</em></font></div></td></tr>
+            </table>
+           
+    </body>
+</html>

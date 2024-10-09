@@ -1,0 +1,2 @@
+java -cp ISF2Excel.jar isf.work.NonISF_Process 
+/Users/kameshnittala/Public/ISFSource/ISF2EXCEL/BaseDir/Batch3_PersepolisB/textcatalouge.xls /Users/kameshnittala/Public/ISFSource/ISF2EXCEL/BaseDir/Batch3_PersepolisB /Users/kameshnittala/Public/ISFSource/ISF2EXCEL/BaseDir/Batch3_PersepolisB/list.xls TRUE

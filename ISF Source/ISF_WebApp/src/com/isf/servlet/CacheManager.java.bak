@@ -1,0 +1,189 @@
+package com.isf.servlet;
+
+import com.isf.cache.LRUCache;
+import com.isf.parsers.LazyParser;
+import com.isf.parsers.RTIParser;
+import com.isf.utils.CacheHandler;
+import com.isf.utils.InscriptWebLoader;
+import com.isf.utils.LogManager;
+import org.apache.log4j.Logger;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
+
+/**
+ * Created by IntelliJ IDEA.
+ * User: 0223
+ * Date: Aug 16, 2007
+ * Time: 7:15:14 PM
+ * To change this template use File | Settings | File Templates.
+ */
+public class CacheManager extends HttpServlet {
+
+    String cachePath, ptmPath;
+    Logger log = LogManager.getLogger(this.getClass());
+    long interval = 20 * 60 * 1000;
+
+    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String type = request.getParameter("type");
+        String ptm = request.getParameter("ptm");
+        if (type != null && type.equalsIgnoreCase("dump")) {
+            LRUCache cache = CacheHandler.getInstance().getCache();
+            response.getOutputStream().write(cache.dumpValues().getBytes());
+        } else if (type != null && type.equalsIgnoreCase("clean")) {
+            LRUCache cache = CacheHandler.getInstance().getCache();
+            if (ptm != null && ptm.endsWith(".ptm")) {
+                ptm = ptm.replaceAll(".ptm", "");
+                ptm = cachePath + File.separator + ptm;
+                cache.deleteEntry(ptm);
+            }
+        }else if ( type != null && type.equalsIgnoreCase("delete"))
+        {
+            LRUCache cache = new LRUCache();
+             cache.createSynchronizedMap(null);
+             CacheHandler.getInstance().setCache(cache);
+        }
+    }
+
+    public void init() throws ServletException {
+        LogManager.initialize("log4j.txt");
+        super.init();    //To change body of overridden methods use File | Settings | File Templates.
+
+        cachePath = InscriptWebLoader.getInstance().getProperty("cacheDirectory");
+        ptmPath = InscriptWebLoader.getInstance().getProperty("ptmFolder");
+        interval = Long.parseLong(InscriptWebLoader.getInstance().getProperty("cacheInterval"));
+       // interval = 7200l;
+        LRUCache cache = null;
+        try {
+            FileInputStream fis = new FileInputStream(cachePath + File.separator + "lruCache_rti.ser");
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            cache = (LRUCache) ois.readObject();
+            ois.close();
+            fis.close();
+            log.debug("Read Cache");
+        } catch (FileNotFoundException fnfe) {
+            log.error("Here FileNotFound");
+            cache = new LRUCache();
+            cache.createSynchronizedMap(null);
+        //  cacheFiles();
+        } catch (Exception ioe) {
+            log.error("FileIOHere");
+            cache = new LRUCache();
+            cache.createSynchronizedMap(null);
+            //  cacheFiles();
+            log.error(ioe);
+        } finally {
+            CacheHandler.getInstance().setCache(cache);
+            cacheFiles();
+        }
+
+
+    }
+
+    private void cacheFiles() {
+        Runnable cacheThread = new Runnable() {
+
+            public void run() {
+                boolean caching = false;
+
+                try {
+                    boolean found = false;
+                    while (true) {
+                        if(!caching){
+                            caching = true;
+                        File f = new File(ptmPath);
+                        File[] files = f.listFiles();
+                        if(files!=null){
+                        String name = "", path = "";
+                        for (int i = 0; i < files.length; i++) {
+                            name = files[i].getName();
+                            if (name.endsWith(".ptm")) {
+                                name = name.replaceAll(".ptm", "");
+                                path = cachePath + File.separator + name;
+                                if (!CacheHandler.getInstance().getCache().isCached(path)) {
+                                    log.debug("caching : " + name);
+                                    found = true;
+                                    LazyParser.getPTMParser(new FileInputStream(files[i]), name, files[i].length()).cachePTM();
+                                    CacheHandler.getInstance().getCache().updateEntry(path);
+                                   File target = new File(name+".ptm");
+                                   if(target.exists())
+                                   {
+                                       target.delete();
+                                       --i;
+                                   }
+                                   
+                                } else {
+                                    log.debug("Already Cached : " + name);
+                                     
+                                }
+                            }else if (name.endsWith(".rti")) {
+                                name = name.replaceAll(".rti", "");
+                                path = cachePath + File.separator + name;
+                                if (!CacheHandler.getInstance().getCache().isCached(path)) {
+                                    log.debug("caching : " + name);
+                                    found = true;
+                                    RTIParser parser = new RTIParser(new FileInputStream(files[i]), name, files[i].length());
+                                    parser.cachePTM();
+                                    CacheHandler.getInstance().getCache().updateEntry(path);
+                                   File target = new File(name+".rti");
+                                   if(target.exists())
+                                   {
+                                       target.delete();
+                                       --i;
+                                   }
+                                   
+                                } else {
+                                    log.debug("Already Cached : " + name);
+                                     
+                                }
+                            }
+                        }
+                        }
+                        if (found) {
+                            log.debug("Cached all Files");
+                            serialize();
+                            caching = false;
+                            found = false;
+                        }
+                        }
+                        Thread.sleep(interval); //check every two hours
+                    }
+
+
+                } catch (Exception exp) {
+                    log.error(exp);
+                    exp.printStackTrace();
+
+
+                }
+            }
+        };
+        Thread t = new Thread(cacheThread);
+        t.start();
+    }
+
+    private void serialize() {
+        try {
+            FileOutputStream fos = new FileOutputStream(cachePath + File.separator + "lruCache_rti.ser");
+            ObjectOutputStream obs = new ObjectOutputStream(fos);
+            obs.writeObject(CacheHandler.getInstance().getCache());
+            obs.flush();
+            obs.close();
+            fos.close();
+            log.debug("Written cache");
+        } catch (Exception exp) {
+            exp.printStackTrace();
+        }
+    }
+
+    public void destroy() {
+        super.destroy();    //To change body of overridden methods use File | Settings | File Templates.
+        // String dir =  PropertyManager.getInstance("server.ini").getProperty("cacheDirectory");
+
+        serialize();
+
+    }
+}

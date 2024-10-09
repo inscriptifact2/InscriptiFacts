@@ -1,0 +1,95 @@
+#############################################################################
+#
+#
+# 	Example SpeedRegistry Entries File
+# 	8 - 3 - 2000
+# 	MMA - MoMac
+#       JakeW
+#
+#	Lines beginning with "#" are ignored by SpeedRegistry.
+#	set Rollback with ROLLBACK=ON or ROLLBACK=OFF
+#	override default delimeter with DELIMITER=<delimeter>
+#	ex. DELIMITER=;
+#
+#	default delimiter is ','
+#	default rollback setting is ON
+#
+#	Known issues
+#	Currently, you are not able to rollback string values
+#	in the Registry that contain commas.
+#
+##############################################################################
+#
+# entries should be in the form of:
+#   
+#     "keyPath, valueName, valueType, value"
+# 
+#  where valueName could have the special String values of:
+#     "$KEY_ONLY" - signifies a request to create a key, valueType and
+#         value will be ignored.
+#     "$DEFAULT$ -  signifies a request to make an entry in the 'default'
+#         valueName sub-key.
+#     "@" - same as $DEFAULT$
+# 
+#  where valuetype could have the special String values of:
+#     INTEGER - signifies a request to create an Integer value.
+#     BYTE    - signifies a request to create an byte array value.
+#     STRING  - signifies a request to create an String value.
+#
+##############################################################################
+# 
+#  Strings sent to this method that do not have all four tokens are treated in the
+#  following manner:
+#
+#  A string with only a single token is assumed to be a request to create 
+#  a Registry Key.  In this circumstance, this is what will be attempted.
+# 
+#  A string with only two tokens is assumed to be a request to create 
+#  a Registry Key, if and only if the second token is $KEY_ONLY$ or whitespace.
+#  In this circumstance, this is what will be attempted.
+# 
+#  A string with only three tokens is assumed to not include a valueType token
+#  and is treated as a request to make a entry into a valueName of type 
+#  String (the default type). In this circumstance, this is what will be attempted.
+#
+##############################################################################
+
+
+
+
+
+################################
+# Begin Entries ################
+
+DELIMITER=;
+
+#####################
+# HKEY_CURRENT_USER #
+#####################
+
+#####################
+# HKEY_CLASSES_ROOT #
+#####################
+HKEY_CLASSES_ROOT\isfsa;@;
+HKEY_CLASSES_ROOT\isfsa\shell
+HKEY_CLASSES_ROOT\isfsa\shell\open
+HKEY_CLASSES_ROOT\isfsa\shell\open\command;@;"$USER_INSTALL_DIR$\$PRODUCT_NAME$" "%1"
+HKEY_CLASSES_ROOT\.ptm;@;isfsa
+HKEY_CLASSES_ROOT\.rti;@;isfsa
+HKEY_CLASSES_ROOT\.hsh;@;isfsa
+HKEY_CLASSES_ROOT\.mview;@;isfsa
+#######################
+# HKEY_CURRENT_CONFIG #
+#######################
+
+##############
+# HKEY_USERS #
+##############
+
+######################
+# HKEY_LOCAL_MACHINE #
+######################
+
+
+# End Entries ###################
+#################################

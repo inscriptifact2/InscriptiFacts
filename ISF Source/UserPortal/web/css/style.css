@@ -1,0 +1,90 @@
+/* 
+    Document   : style
+    Created on : Nov 15, 2012, 3:04:29 PM
+    Author     : raok1
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+.title { font-family: Trebuchet MS,Arial,Tahoma; font-size: 16px; font-weight: bold; color: #382300; }
+.subhead { font-family: Trebuchet MS,Arial,Tahoma; font-size: 14px; font-weight: bold; color:#7F5000;  }
+.bluesubhead { font-family: Trebuchet MS,Arial,Tahoma; font-size: 14px; font-weight: bold; color: #382300; }
+.link {font-family:Trebuchet Ms, Tahoma; font-size:14px; font-style: italic; font-weight:bold;  color:rgb(0,0,255);}
+.manLabel{font-family:Trebuchet Ms, Tahoma; font-size:14px; font-style: italic; font-weight:bold;  color:#382300;}
+.label{font-family:Trebuchet Ms, Tahoma; font-size:14px; font-style: italic; font-weight: plain;  color:#382300;}/*#382300*/
+.regtable{
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-color: #330000;
+    border-left-color: #330000;
+    border-bottom-color: #330000;
+    border-top-color: #330000;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+ 
+}
+.headtd{font-family:Trebuchet Ms, Tahoma; font-size:16px; font-weight: bold;  color:#ffffff;
+    background-color: #525D76;
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+.regtr{
+    font-family: Trebuchet MS,Arial,Tahoma;
+    font-size: 12px;
+    font-weight: bold;color:#7F5000;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-color: #330000;
+    border-left-color: #330000;
+    border-bottom-color: #330000;
+    border-top-color: #330000;
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+
+.mtd{font-family:Trebuchet Ms, Tahoma; font-size:12px; font-weight: bold;  color:#7F5000;}
+
+td{font-family:Trebuchet Ms, Tahoma; font-size:14px; font-weight: bold;  color:#7F5000;}
+P { font-family: Trebuchet MS,Arial,Tahoma; font-size: 18px; font-weight: normal; color: #382300; }
+LI { font-family: Trebuchet MS,Arial,Tahoma; font-size: 14px; font-weight: normal; color: #382300; }
+DD{ font-family: Trebuchet MS,Arial,Tahoma; font-size: 14px; font-weight: normal; color: #382300; }
+DT{ font-family: Trebuchet MS,Arial,Tahoma; font-size: 14px; font-weight: bold; color: #382300; }
+a:link {font-family: Trebuchet MS,Arial,Tahoma; font-size: 15px; font-weight: bolder; color: #3300ff; text-decoration:none; font-style: normal; }/* unvisited link */
+a:hover {font-family: Trebuchet MS,Arial,Tahoma; font-size: 15px; font-weight: bolder; color: #000066; text-decoration:underline;}   /* mouse over link */
+a:visited{font-family: Trebuchet MS,Arial,Tahoma; font-size: 15px; font-weight: bolder; color: #3300ff; text-decoration:none; font-style: normal; }
+h1{font-family: Trebuchet MS,Arial,Tahoma; font-size: 24px; font-weight: bold; color: #382300;}
+h2{font-family: Trebuchet MS,Arial,Tahoma; font-size: 20px; font-weight: bold; color: #382300;}
+span{font-family:Trebuchet MS,Arial,Tahoma; font-size: 14px; font-weight: bold; color: #990000; }
+.error{font-family:Trebuchet Ms, Tahoma; font-size:12px; font-weight: bold;  color:#ff0000;}
+.message{ font-size:13px;  color:#0000ff;    font-family: Trebuchet Ms, Tahoma;}
+
+
+
+

@@ -1,0 +1,41 @@
+isf.net.request.ImageRequestObject -> isf.net.request.l1IlIlTI1T1T:
+    java.lang.String s1 -> s1
+    org.apache.log4j.Logger log -> log
+    isf.net.request.ImageRequestObject proxy -> TT1lIT1ll1ITIIl1
+    isf.net.request.ImageRequestObject getInstance() -> TT1lIT1ll1ITIIl1
+    javax.swing.ImageIcon fetchImage(java.lang.String) -> fetchImage
+    java.lang.Object getImageProperties(java.lang.String) -> getImageProperties
+    java.lang.String saveFile(java.lang.String,java.lang.String) -> saveFile
+isf.net.request.NetManager -> isf.net.request.NetManager:
+isf.net.request.PTMRequestDispatcher -> isf.net.request.lI1lTIIlT1T1:
+    org.apache.log4j.Logger log -> log
+    isf.net.request.PTMRequestDispatcher proxy -> ITI1llTTI1lITl
+    java.lang.String serverPtm -> l1IlTT1lITIl1IT1
+    isf.net.request.PTMRequestDispatcher getInstance() -> ITI1llTTI1lITl
+    byte[] getImageCoeff(java.lang.String,int,int,int) -> getImageCoeff
+isf.net.request.RequestDispatcherObject -> isf.net.request.Tl1l11IlIITT:
+    java.lang.String server -> lI1I1T1ITTl1llIT
+    java.lang.String mode -> IlITlTTTl11Il1I
+    java.lang.String imageurl -> IT11TT1lIll1ITIl
+    java.lang.String alt_server -> TIITI1lTlTl1Il11
+    java.lang.String encodeRate -> TTl1TITI1l1Il1lI
+    isf.net.request.RequestDispatcherObject rdo -> IITTlT11lII1T1ll
+    org.apache.commons.httpclient.HttpClient client -> l1IllT11TIIT1ITl
+    org.apache.commons.httpclient.HttpState state -> l1lT1IlI1IlT1TIT
+    isf.common.utils.LogoutListener lol -> IlIT1lT1TI1IlT1l
+    org.apache.commons.httpclient.MultiThreadedHttpConnectionManager mthcm -> II11llTI1TlTITl1
+    org.apache.commons.httpclient.DefaultHttpMethodRetryHandler dmrh -> T1TlITlIl11I1TIl
+    java.lang.String serverConfig -> Il1II1TlT1llTI1T
+    java.lang.String strMode -> lITTlIlT1IlI1T
+    org.apache.log4j.Logger logger -> logger
+    isf.net.request.RequestDispatcherObject getInstance() -> l1IlTT1lITIl1IT1
+    java.lang.Object handleQueryEvent(java.lang.String) -> handleQueryEvent
+    javax.swing.ImageIcon fetchImage(java.lang.String) -> fetchImage
+    java.lang.Object getImageProperties(java.lang.String) -> getImageProperties
+    java.lang.String saveFile(java.lang.String,java.lang.String) -> saveFile
+    int checkConnection() -> checkConnection
+    void addLogoutListener(isf.common.utils.LogoutListener) -> TT1lIT1ll1ITIIl1
+    isf.common.utils.PTMConfig getPTMConfig(java.lang.String) -> getPTMConfig
+    java.lang.String retrieveAttributeValue(org.w3c.dom.Document,java.lang.String,java.lang.String) -> TT1lIT1ll1ITIIl1
+    int retrieveAttributeValueInt(org.w3c.dom.Document,java.lang.String,java.lang.String) -> ITI1llTTI1lITl
+    long retrieveAttributeValueLong(org.w3c.dom.Document,java.lang.String,java.lang.String) -> l1IlTT1lITIl1IT1

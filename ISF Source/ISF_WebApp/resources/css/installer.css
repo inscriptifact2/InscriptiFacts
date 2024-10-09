@@ -1,0 +1,40 @@
+/* 
+    Document   : installer
+    Created on : Jul 31, 2014, 6:36:38 PM
+    Author     : raok1
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body { 
+    display: block;
+    background-color:#FEEFB3 ;
+}
+
+table{
+    border-color: #cd0f0f;
+    border-style:  solid;
+}
+
+td.header{
+    font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular;
+    font-size:14px;
+    font-weight: bold;
+    background-color: #003399;
+    color:white;
+}
+
+td.active{
+  font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular;
+    font-size:11px;
+    font-weight: bold;
+    color:green;  
+}
+
+td {
+  font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular;
+    font-size:11px;
+    font-weight: normal;
+    color:black;   
+}
+
